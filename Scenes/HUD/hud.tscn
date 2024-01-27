@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://c3d1rcxdlv745"]
 
 [ext_resource type="Script" path="res://Scenes/HUD/hud.gd" id="1_qrbwo"]
-[ext_resource type="Texture2D" uid="uid://dh6cukxvxt5mr" path="res://Scenes/HUD/hotbar.png" id="2_57lau"]
-[ext_resource type="Texture2D" uid="uid://dq6wxtus4bc40" path="res://Scenes/HUD/key.svg" id="2_cns17"]
+[ext_resource type="Texture2D" uid="uid://bcwixxvuko00r" path="res://Scenes/HUD/hotbar.png" id="2_57lau"]
+[ext_resource type="Texture2D" uid="uid://4e4eq2tye7cd" path="res://Scenes/HUD/key.svg" id="2_cns17"]
 [ext_resource type="PackedScene" uid="uid://dp11vxlklqij2" path="res://Scenes/HUD/item.tscn" id="2_ssd4l"]
 
 [node name="HUD" type="CanvasLayer"]
