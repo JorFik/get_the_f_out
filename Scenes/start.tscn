@@ -1,8 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://cjgmor642bipd"]
+[gd_scene load_steps=8 format=3 uid="uid://cjgmor642bipd"]
 
 [ext_resource type="PackedScene" uid="uid://rntxee5ikkkn" path="res://Scenes/red.tscn" id="1_rthnv"]
 [ext_resource type="Texture2D" uid="uid://cdbglu8oyb68x" path="res://Resources/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png" id="2_6yta7"]
 [ext_resource type="Script" path="res://Scenes/red.gd" id="3_gax2p"]
+[ext_resource type="PackedScene" uid="uid://3v5v1o6rayjm" path="res://Scenes/Obstacles/chest.tscn" id="4_74nnl"]
+[ext_resource type="PackedScene" uid="uid://blekvi2c2tnxk" path="res://Scenes/Obstacles/torch.tscn" id="5_4ewwf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0t5i7"]
 texture = ExtResource("2_6yta7")
@@ -388,3 +390,21 @@ layer_0/tile_data = PackedInt32Array(-2359332, 0, 0, -2293796, 0, 1, -2228260, 0
 position = Vector2(583, 591)
 motion_mode = 1
 script = ExtResource("3_gax2p")
+
+[node name="Torch" parent="." instance=ExtResource("5_4ewwf")]
+position = Vector2(53, 33)
+
+[node name="Torch3" parent="." instance=ExtResource("5_4ewwf")]
+position = Vector2(58, 558)
+
+[node name="Torch4" parent="." instance=ExtResource("5_4ewwf")]
+position = Vector2(1056, 555)
+
+[node name="Torch2" parent="." instance=ExtResource("5_4ewwf")]
+position = Vector2(1064, 30)
+
+[node name="Chest" parent="." instance=ExtResource("4_74nnl")]
+position = Vector2(680, 231)
+
+[node name="Chest2" parent="." instance=ExtResource("4_74nnl")]
+position = Vector2(325, 234)
