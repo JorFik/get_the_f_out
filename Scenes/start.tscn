@@ -4029,11 +4029,21 @@ position = Vector2(-417, -392)
 position = Vector2(1648, 555)
 
 [node name="Obstacle" parent="." instance=ExtResource("9_emrcd")]
-position = Vector2(122, 958)
-scale = Vector2(4.37479, 3.0123)
+position = Vector2(387, 132)
+scale = Vector2(5.16926, 4.86149)
+
+[node name="Obstacle2" parent="." instance=ExtResource("9_emrcd")]
+position = Vector2(813, 399)
+scale = Vector2(1.46052, 2.75945)
 
 [node name="Surface" parent="." instance=ExtResource("10_o7qyy")]
-position = Vector2(685, 1207)
+position = Vector2(1011, 533)
+scale = Vector2(1.40699, 1.70274)
+
+[node name="Surface2" parent="." instance=ExtResource("10_o7qyy")]
+position = Vector2(990, 642)
+scale = Vector2(0.404272, 0.7157)
+metadata/Height = 15.0
 
 [connection signal="body_entered" from="Door" to="." method="_on_door_body_entered"]
 [connection signal="body_entered" from="Door2" to="." method="_on_door2_body_entered"]

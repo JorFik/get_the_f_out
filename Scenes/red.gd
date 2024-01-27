@@ -17,6 +17,7 @@ const CHARACTER_LAYER = 2
 const CHARACTER_MASK = 2
 @onready var sprite_2d = %AnimatedSprite2D
 var surface_height = 0
+var colliding_surfaces = []
 
 var input = Vector2.ZERO
 
@@ -87,6 +88,13 @@ func _physics_process(delta):
 	
 	move_and_slide()
 
+func calculate_max_height():
+	var max_height = 0
+	for surface in colliding_surfaces:
+		if surface.get_meta("Height") > max_height:
+			max_height = surface.get_meta("Height")
+	return max_height
+
 func _on_area_2d_mainchar_area_entered(area):
 	var overl_bodies = area.get_overlapping_bodies()
 	var	overl_body
@@ -98,13 +106,14 @@ func _on_area_2d_mainchar_area_entered(area):
 		Dialogic.timeline_ended.connect(_on_timeline_ended)
 		overl_body.init_dial()
 	if area.is_in_group("surface"):
-		surface_height = area.get_meta("Height")
+		colliding_surfaces.append(area)
+		surface_height = calculate_max_height()
 
 func _on_timeline_ended():
 	Dialogic.timeline_ended.disconnect(_on_timeline_ended)
 	player_is_talking = false
 
-
 func _on_area_2d_mainchar_area_exited(area):
 	if area.is_in_group("surface"):
-		surface_height = 0
+		colliding_surfaces.erase(area)
+		surface_height = calculate_max_height()
