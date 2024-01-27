@@ -1,11 +1,9 @@
-
-
-[gd_scene load_steps=8 format=3 uid="uid://cjgmor642bipd"]
+[gd_scene load_steps=10 format=3 uid="uid://cjgmor642bipd"]
 
 [ext_resource type="PackedScene" uid="uid://rntxee5ikkkn" path="res://Scenes/red.tscn" id="1_rthnv"]
 [ext_resource type="Texture2D" uid="uid://cdbglu8oyb68x" path="res://Resources/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png" id="2_6yta7"]
-[ext_resource type="Script" path="res://Scenes/red.gd" id="3_gax2p"]
 [ext_resource type="Texture2D" uid="uid://c6dydy014vanq" path="res://Resources/16x16 dungeon ii wall reconfig/16x16 dungeon ii wall reconfig v04 spritesheet.png" id="2_f40gs"]
+[ext_resource type="Script" path="res://src/red.gd" id="3_gax2p"]
 [ext_resource type="PackedScene" uid="uid://3v5v1o6rayjm" path="res://Scenes/Obstacles/chest.tscn" id="4_74nnl"]
 [ext_resource type="PackedScene" uid="uid://blekvi2c2tnxk" path="res://Scenes/Obstacles/torch.tscn" id="5_4ewwf"]
 
@@ -1126,7 +1124,6 @@ layer_0/tile_data = PackedInt32Array(-2359332, 0, 0, -2293796, 0, 1, -2228260, 0
 
 [node name="red" parent="." instance=ExtResource("1_rthnv")]
 position = Vector2(583, 591)
-motion_mode = 1
 script = ExtResource("3_gax2p")
 
 [node name="Torch" parent="." instance=ExtResource("5_4ewwf")]
