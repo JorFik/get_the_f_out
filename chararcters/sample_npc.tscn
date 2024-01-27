@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://bh43laytebyva"]
+[gd_scene load_steps=6 format=3 uid="uid://cripn3i3up2h5"]
 
 [ext_resource type="Script" path="res://chararcters/sample_npc.gd" id="1_rthf8"]
-[ext_resource type="Texture2D" uid="uid://ddfftd3y6qpc7" path="res://chararcters/slime/slime_body.png" id="1_yhoye"]
+[ext_resource type="Texture2D" uid="uid://ytikviwwkpo1" path="res://chararcters/slime/slime_body.png" id="1_yhoye"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_w5ngi"]
 animations = [{
@@ -18,7 +18,7 @@ animations = [{
 radius = 19.2354
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_k8n0l"]
-radius = 7.72646
+radius = 7.10118
 
 [node name="sample_npc" type="CharacterBody2D"]
 script = ExtResource("1_rthf8")
