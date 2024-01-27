@@ -92,8 +92,6 @@ func _on_area_2d_mainchar_area_entered(area):
 		Dialogic.timeline_ended.connect(_on_timeline_ended)
 		overl_body.init_dial()
 
-
-
 func _on_timeline_ended():
 	Dialogic.timeline_ended.disconnect(_on_timeline_ended)
 	player_is_talking = false

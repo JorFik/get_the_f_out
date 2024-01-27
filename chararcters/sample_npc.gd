@@ -11,8 +11,7 @@ func _on_dialogic_signal(argument:String):
 	if argument == "riddle1":
 		#slot = Dialogic.Save.save(slot, true, false)
 		get_node("/root/Start/DialogueSceneGeezer").visible = false
-		var riddle = riddle1_scene.instantiate()
-		$"../Riddles".add_child(riddle)
+		$"../Riddles/Number RIddle".visible = true
 		#riddle.connect("riddle_correct", _on_riddle_correct, 1)
 		
 		#Dialogic.paused = true
@@ -20,6 +19,7 @@ func _on_dialogic_signal(argument:String):
 func _on_riddle_correct():
 	print ("_ON_RIDDLE_CORRECT_IN_ANOTHER_NODE_AA")
 	get_node("/root/Start/DialogueSceneGeezer").visible = true
+	$"../Riddles/Number RIddle".visible = false
 	Dialogic.paused = false
 	#Dialogic.start("res://Resources/dialogues/timeline1.dtl")
 	#Dialogic.Save.load(slot)

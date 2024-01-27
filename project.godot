@@ -15,6 +15,10 @@ run/main_scene="res://Scenes/main_menu.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://Resources/icon.svg"
 
+[autoload]
+
+Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
+
 [dialogic]
 
 directories/dch_directory={}
