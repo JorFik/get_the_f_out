@@ -9983,4 +9983,4 @@ layer_0/tile_data = PackedInt32Array(131075, 0, 0, 196611, 0, 1, 262147, 0, 2, 3
 
 [node name="red" parent="." instance=ExtResource("2_igv2m")]
 position = Vector2(972, 1726)
-scale = Vector2(2, 2)
+scale = Vector2(-2, 2)
