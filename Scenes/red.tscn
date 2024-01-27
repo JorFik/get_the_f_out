@@ -1,5 +1,6 @@
-[gd_scene load_steps=24 format=3 uid="uid://rntxee5ikkkn"]
+[gd_scene load_steps=25 format=3 uid="uid://rntxee5ikkkn"]
 
+[ext_resource type="Script" path="res://src/red.gd" id="1_0j45d"]
 [ext_resource type="Texture2D" uid="uid://bdtpm25ke7ncu" path="res://Resources/overworld_sprite_template_for_pokemon_games_by_cynthiacelestic-d8h0v36-1141318516.png" id="1_w2my3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f4xir"]
@@ -189,11 +190,16 @@ animations = [{
 size = Vector2(24, 40.5)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+texture_filter = 1
 position = Vector2(300, 85)
+motion_mode = 1
+wall_min_slide_angle = 0.0
+script = ExtResource("1_0j45d")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
 sprite_frames = SubResource("SpriteFrames_1ddq2")
-animation = &"idle_up"
+animation = &"idle_right"
 autoplay = "idle_up"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
