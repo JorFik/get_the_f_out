@@ -17,6 +17,8 @@ config/icon="res://Resources/icon.svg"
 
 [display]
 
+window/size/viewport_width=2400
+window/size/viewport_height=1800
 window/stretch/mode="canvas_items"
 
 [input]
@@ -51,6 +53,10 @@ jump={
 ]
 }
 
+[internationalization]
+
+locale/transparent_background=false
+
 [physics]
 
 3d/default_gravity=0.0
@@ -62,4 +68,4 @@ jump={
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
-environment/defaults/default_clear_color=Color(0.239216, 0.145098, 0.231373, 1)
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)

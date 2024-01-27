@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dc5715m4nasta"
-path="res://.godot/imported/stone_prev_no_background 2.png-4e49ab0dfdd0b448ab14b3fbe4b8f9fe.ctex"
+uid="uid://bym1gygblniyo"
+path="res://.godot/imported/Stuhl.png-ba151c72fad063886a1d891f92fd98e8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/Riddles/Number Riddle/stone_prev_no_background 2.png"
-dest_files=["res://.godot/imported/stone_prev_no_background 2.png-4e49ab0dfdd0b448ab14b3fbe4b8f9fe.ctex"]
+source_file="res://texture/Stuhl.png"
+dest_files=["res://.godot/imported/Stuhl.png-ba151c72fad063886a1d891f92fd98e8.ctex"]
 
 [params]
 
