@@ -1,7 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://dcpxv4c1kotek"]
+[gd_scene load_steps=7 format=3 uid="uid://yfnin6twnskr"]
 
 [ext_resource type="Script" path="res://Scenes/upper_floor.gd" id="1_4ju4s"]
-[ext_resource type="Texture2D" uid="uid://bcg4cx00ciiss" path="res://Resources/haunted  6.jpg" id="1_b37b3"]
+[ext_resource type="Texture2D" uid="uid://b6jhpqiainoyd" path="res://Resources/haunted  6.jpg" id="1_b37b3"]
 [ext_resource type="PackedScene" uid="uid://rntxee5ikkkn" path="res://Scenes/red.tscn" id="2_afo4o"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u1u64"]
@@ -9991,7 +9991,7 @@ position = Vector2(-6.875, 26)
 shape = SubResource("RectangleShape2D_tbul6")
 
 [node name="red" parent="." instance=ExtResource("2_afo4o")]
-position = Vector2(1057, 1726)
+position = Vector2(957, 1669)
 scale = Vector2(2, 2)
 
 [connection signal="body_entered" from="Door" to="." method="_on_door_body_entered"]
