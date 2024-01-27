@@ -9,8 +9,7 @@
 script = ExtResource("1_qrbwo")
 
 [node name="Hotbar" type="Node2D" parent="."]
-position = Vector2(249, 642)
-scale = Vector2(0.61, 0.61)
+position = Vector2(413, 1769)
 metadata/_edit_group_ = true
 
 [node name="HotbarSlots" type="GridContainer" parent="Hotbar"]

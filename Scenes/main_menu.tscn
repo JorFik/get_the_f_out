@@ -85,5 +85,5 @@ The F**k Out"
 script = ExtResource("5_yndoc")
 
 [connection signal="pressed" from="Backgroound/Start" to="Backgroound" method="_on_start_pressed"]
-[connection signal="pressed" from="Backgroound/End" to="Backgroound" method="_on_end_pressed"]
 [connection signal="pressed" from="Backgroound/End" to="Backgroound" method="_on_start_pressed"]
+[connection signal="pressed" from="Backgroound/End" to="Backgroound" method="_on_end_pressed"]
