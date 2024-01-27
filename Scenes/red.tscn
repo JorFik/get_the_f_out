@@ -258,7 +258,6 @@ autoplay = "idle_up"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 1.75)
 shape = SubResource("CapsuleShape2D_yiqv7")
-#shape = SubResource("RectangleShape2D_q6nvx")
 
 [node name="Area2D_mainchar" type="Area2D" parent="."]
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://bbdkl5ppi5e6r"]
+[gd_scene load_steps=6 format=3 uid="uid://ens4vbamlcqp"]
 
 [ext_resource type="Script" path="res://src/npc_butler.gd" id="1_hpdj4"]
 [ext_resource type="Texture2D" uid="uid://bb82c45ttf4lw" path="res://texture/butler-front.png" id="2_sm4rr"]

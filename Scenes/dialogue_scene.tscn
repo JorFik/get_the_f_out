@@ -1,11 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://314tx730r88e"]
+[gd_scene load_steps=5 format=3 uid="uid://52sk0gqxefta"]
 
 [ext_resource type="Texture2D" uid="uid://ckd1r1gn7k5ck" path="res://texture/wall1.png" id="1_otghy"]
 [ext_resource type="Texture2D" uid="uid://ciq1ku5x2n3q2" path="res://texture/Stuhl.png" id="2_8cjlq"]
 [ext_resource type="Texture2D" uid="uid://42frhin50fid" path="res://texture/old man.png" id="3_4wr3e"]
 [ext_resource type="Texture2D" uid="uid://cmkthwmjo7ot7" path="res://texture/schrank.png" id="4_rlwdw"]
 
-[node name="DialogueScene" type="Node2D"]
+[node name="DialogueScene2" type="Node2D"]
 z_index = 50
 
 [node name="Wall1" type="Sprite2D" parent="."]
