@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://br8bkdstywfj8"
+=======
+uid="uid://o2w2dnt5ynad"
+>>>>>>> master
 path="res://.godot/imported/old man.png-44836fa09fb4f58684acd65145941e1d.ctex"
 metadata={
 "vram_texture": false

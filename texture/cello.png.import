@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://dyihpc4gyh3d1"
+=======
+uid="uid://db30yrghp5pph"
+>>>>>>> master
 path="res://.godot/imported/cello.png-f91cdc4fc4309a987d357f80558a3baa.ctex"
 metadata={
 "vram_texture": false

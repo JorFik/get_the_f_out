@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpavdh2hxtim5"
-path="res://.godot/imported/butler-front.png-a6dad30030a4dd8b2915c4e8423d8797.ctex"
+uid="uid://jiltybhmp41y"
+path="res://.godot/imported/haunted tileset.jpg-a46d7929d9d91db423d0d4293692faf9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://texture/butler-front.png"
-dest_files=["res://.godot/imported/butler-front.png-a6dad30030a4dd8b2915c4e8423d8797.ctex"]
+source_file="res://Resources/haunted tileset.jpg"
+dest_files=["res://.godot/imported/haunted tileset.jpg-a46d7929d9d91db423d0d4293692faf9.ctex"]
 
 [params]
 

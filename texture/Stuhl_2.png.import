@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://dg71tmriru71s"
+=======
+uid="uid://ba5ghhm6ubf4p"
+>>>>>>> master
 path="res://.godot/imported/Stuhl_2.png-d583efe77ce9141ddf79a08f596f9664.ctex"
 metadata={
 "vram_texture": false

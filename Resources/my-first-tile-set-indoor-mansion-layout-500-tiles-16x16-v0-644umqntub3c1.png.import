@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpavdh2hxtim5"
-path="res://.godot/imported/butler-front.png-a6dad30030a4dd8b2915c4e8423d8797.ctex"
+uid="uid://bm0qfwwwtculd"
+path="res://.godot/imported/my-first-tile-set-indoor-mansion-layout-500-tiles-16x16-v0-644umqntub3c1.png-808a41177646f781325a18dbe3cef528.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://texture/butler-front.png"
-dest_files=["res://.godot/imported/butler-front.png-a6dad30030a4dd8b2915c4e8423d8797.ctex"]
+source_file="res://Resources/my-first-tile-set-indoor-mansion-layout-500-tiles-16x16-v0-644umqntub3c1.png"
+dest_files=["res://.godot/imported/my-first-tile-set-indoor-mansion-layout-500-tiles-16x16-v0-644umqntub3c1.png-808a41177646f781325a18dbe3cef528.ctex"]
 
 [params]
 
