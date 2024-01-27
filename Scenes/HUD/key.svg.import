@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dc5715m4nasta"
-path="res://.godot/imported/stone_prev_no_background 2.png-4e49ab0dfdd0b448ab14b3fbe4b8f9fe.ctex"
+uid="uid://dq6wxtus4bc40"
+path="res://.godot/imported/key.svg-5468d5bde9dee019a2f78c1f46bf762e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/Riddles/Number Riddle/stone_prev_no_background 2.png"
-dest_files=["res://.godot/imported/stone_prev_no_background 2.png-4e49ab0dfdd0b448ab14b3fbe4b8f9fe.ctex"]
+source_file="res://Scenes/HUD/key.svg"
+dest_files=["res://.godot/imported/key.svg-5468d5bde9dee019a2f78c1f46bf762e.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

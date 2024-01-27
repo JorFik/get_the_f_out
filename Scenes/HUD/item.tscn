@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dp11vxlklqij2"]
+
+[node name="Item" type="TextureRect"]
+offset_right = 70.0
+offset_bottom = 70.0
+pivot_offset = Vector2(35, 35)
+expand_mode = 5
+stretch_mode = 5

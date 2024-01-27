@@ -1,0 +1,80 @@
+[gd_scene load_steps=5 format=3 uid="uid://c3d1rcxdlv745"]
+
+[ext_resource type="Script" path="res://Scenes/HUD/hud.gd" id="1_qrbwo"]
+[ext_resource type="Texture2D" uid="uid://dh6cukxvxt5mr" path="res://Scenes/HUD/hotbar.png" id="2_57lau"]
+[ext_resource type="Texture2D" uid="uid://dq6wxtus4bc40" path="res://Scenes/HUD/key.svg" id="2_cns17"]
+[ext_resource type="PackedScene" uid="uid://dp11vxlklqij2" path="res://Scenes/HUD/item.tscn" id="2_ssd4l"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_qrbwo")
+
+[node name="Hotbar" type="Node2D" parent="."]
+position = Vector2(249, 642)
+scale = Vector2(0.61, 0.61)
+metadata/_edit_group_ = true
+
+[node name="HotbarSlots" type="GridContainer" parent="Hotbar"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -264.0
+offset_top = -105.33
+offset_right = 264.0
+offset_bottom = -25.3298
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/h_separation = 46
+columns = 5
+
+[node name="HotbarSlot1" type="Panel" parent="Hotbar/HotbarSlots"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="Item" parent="Hotbar/HotbarSlots/HotbarSlot1" instance=ExtResource("2_ssd4l")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -35.0
+offset_right = 35.0
+offset_bottom = 35.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_cns17")
+
+[node name="HotbarSlot2" type="Panel" parent="Hotbar/HotbarSlots"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="HotbarSlot3" type="Panel" parent="Hotbar/HotbarSlots"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="HotbarSlot4" type="Panel" parent="Hotbar/HotbarSlots"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="HotbarSlot5" type="Panel" parent="Hotbar/HotbarSlots"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Hotbar"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -394.265
+offset_top = -122.395
+offset_right = 309.736
+offset_bottom = 5.60437
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("2_57lau")
+expand_mode = 1
+flip_h = true
