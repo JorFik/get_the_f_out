@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://dyw7n7iyoiqmg"]
+
+[ext_resource type="Texture2D" uid="uid://dhoy2jyjkl16p" path="res://texture/Stuhl.png" id="2_8rc5s"]
+[ext_resource type="Texture2D" uid="uid://dd8282vsmng0p" path="res://texture/fireplace.png" id="4_h1akj"]
+[ext_resource type="Texture2D" uid="uid://sdpqqncx0i2u" path="res://texture/door1.png" id="4_l7m71"]
+[ext_resource type="Texture2D" uid="uid://dc7ryodiluf7b" path="res://texture/schrank.png" id="4_o6a15"]
+[ext_resource type="Texture2D" uid="uid://cpauep0hhhmyf" path="res://texture/butler-front.png" id="5_h554n"]
+
+[node name="DialogueScene" type="Node2D"]
+z_index = 50
+
+[node name="Stuhl" type="Sprite2D" parent="."]
+position = Vector2(772, 443)
+texture = ExtResource("2_8rc5s")
+
+[node name="Schrank" type="Sprite2D" parent="."]
+position = Vector2(1000, 281.667)
+scale = Vector2(5.26667, 5.26667)
+texture = ExtResource("4_o6a15")
+
+[node name="Fireplace" type="Sprite2D" parent="."]
+position = Vector2(245, 332)
+scale = Vector2(10.4062, 10.4062)
+texture = ExtResource("4_h1akj")
+
+[node name="Door1" type="Sprite2D" parent="."]
+position = Vector2(911, 333)
+scale = Vector2(10.5156, 10.5156)
+texture = ExtResource("4_l7m71")
+
+[node name="Butler-front" type="Sprite2D" parent="."]
+position = Vector2(976, 439)
+scale = Vector2(13.0313, 13.0313)
+texture = ExtResource("5_h554n")
