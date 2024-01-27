@@ -34,5 +34,5 @@ func init_dial():
 func _on_timeline_ended():
 	if (riddle_solved):
 		Dialogic.timeline_ended.disconnect(_on_timeline_ended)
-		get_node("/root/Start/DialogueSceneGeezer").visible = false
+	get_node("/root/Start/DialogueSceneGeezer").visible = false
 

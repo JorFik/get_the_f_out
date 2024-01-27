@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bymftngoicm7l" path="res://Scenes/Riddles/Number Riddle/number_riddle.tscn" id="2_ipykl"]
 [ext_resource type="Texture2D" uid="uid://dipf1o87did1x" path="res://Resources/haunted tileset.jpg" id="2_kab8f"]
 [ext_resource type="PackedScene" uid="uid://cripn3i3up2h5" path="res://chararcters/sample_npc.tscn" id="4_hcql4"]
-[ext_resource type="PackedScene" path="res://Scenes/dialogue_scene.tscn" id="8_oo1sq"]
+[ext_resource type="PackedScene" uid="uid://bq0kbgipiv6qa" path="res://Scenes/dialogue_scene.tscn" id="8_oo1sq"]
 [ext_resource type="PackedScene" path="res://chararcters/npc_butler.tscn" id="9_t7ljs"]
 [ext_resource type="PackedScene" path="res://Scenes/dialogue_butler_scene.tscn" id="10_rcbop"]
 
