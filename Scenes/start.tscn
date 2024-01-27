@@ -3990,4 +3990,12 @@ position = Vector2(995, -768)
 position = Vector2(701, 1187)
 shape = SubResource("RectangleShape2D_stmol")
 
+[node name="Door2" type="Area2D" parent="."]
+position = Vector2(995, -768)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door2"]
+position = Vector2(-295, 1191)
+shape = SubResource("RectangleShape2D_stmol")
+
 [connection signal="body_entered" from="Door" to="." method="_on_door_body_entered"]
+[connection signal="body_entered" from="Door2" to="." method="_on_door2_body_entered"]
