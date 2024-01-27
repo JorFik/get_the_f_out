@@ -42,7 +42,10 @@ choices/reveal_by_input=false
 save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autopauses={}
-variables={}
+variables={
+"NewVariable": "228",
+"first_time": "1"
+}
 layout/style_list=[]
 layout/default_style="Default"
 glossary/default_case_sensitive=true

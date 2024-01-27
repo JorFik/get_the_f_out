@@ -1,4 +1,9 @@
-Hello, this is a sample dialogwefedsdfsdf
-fuck you youngster!!!
-bye ^_^
-[wait time="0.1"]
+if {first_time} == 1:
+	Hello, this is a sample dialogwefedsdfsdf
+	fuck you youngster!!!
+	bye ^_^
+	[wait time="0.1"]
+	set {first_time} = 0
+else:
+	This is not our first dialogue.
+	[wait time="0.1"]
