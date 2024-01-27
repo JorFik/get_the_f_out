@@ -77,3 +77,11 @@ func _physics_process(delta):
 		sprite_2d.animation = "idle_down"
 	
 	move_and_slide()
+
+func _on_area_2d_mainchar_area_entered(area):
+	var overl_bodies = area.get_overlapping_bodies()
+	var	overl_body
+	if overl_bodies.size() > 0:
+		overl_body = overl_bodies.front()
+	if (overl_body.has_method("init_dial")):
+		overl_body.init_dial()
