@@ -1,11 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://dcpxv4c1kotek"]
 
 [ext_resource type="Script" path="res://Scenes/upper_floor.gd" id="1_4ju4s"]
-<<<<<<< HEAD
 [ext_resource type="Texture2D" uid="uid://bcg4cx00ciiss" path="res://Resources/haunted  6.jpg" id="1_b37b3"]
-=======
-[ext_resource type="Texture2D" uid="uid://mepsfkyiwhd3" path="res://Resources/haunted  6.jpg" id="1_b37b3"]
->>>>>>> 46acfb169133095b98b4b555fb220d0758bab989
 [ext_resource type="PackedScene" uid="uid://rntxee5ikkkn" path="res://Scenes/red.tscn" id="2_afo4o"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u1u64"]

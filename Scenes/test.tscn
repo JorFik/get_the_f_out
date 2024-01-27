@@ -1,9 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://dompoa0eyxamt"]
+[gd_scene load_steps=9 format=3 uid="uid://dompoa0eyxamt"]
 
 [ext_resource type="Script" path="res://Scenes/start.gd" id="1_auot1"]
 [ext_resource type="PackedScene" uid="uid://rntxee5ikkkn" path="res://Scenes/red.tscn" id="1_rthnv"]
-[ext_resource type="Texture2D" uid="uid://jiltybhmp41y" path="res://Resources/haunted tileset.jpg" id="2_kab8f"]
-[ext_resource type="Script" path="res://Scenes/red.gd" id="3_gax2p"]
+[ext_resource type="Texture2D" uid="uid://nawsywbhbpej" path="res://Resources/haunted tileset.jpg" id="2_kab8f"]
 [ext_resource type="PackedScene" uid="uid://3v5v1o6rayjm" path="res://Scenes/Obstacles/chest.tscn" id="4_74nnl"]
 [ext_resource type="PackedScene" uid="uid://blekvi2c2tnxk" path="res://Scenes/Obstacles/torch.tscn" id="5_4ewwf"]
 
@@ -1249,7 +1248,6 @@ position = Vector2(325, 234)
 
 [node name="red" parent="." instance=ExtResource("1_rthnv")]
 position = Vector2(583, 591)
-script = ExtResource("3_gax2p")
 
 [node name="Door" type="Area2D" parent="."]
 
