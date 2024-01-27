@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cjgmor642bipd"]
+[gd_scene load_steps=10 format=3 uid="uid://cjgmor642bipd"]
 
 [ext_resource type="Script" path="res://Scenes/start.gd" id="1_auot1"]
 [ext_resource type="PackedScene" uid="uid://rntxee5ikkkn" path="res://Scenes/red.tscn" id="1_rthnv"]
@@ -1213,6 +1213,9 @@ texture = ExtResource("2_kab8f")
 [sub_resource type="TileSet" id="TileSet_s8yf6"]
 sources/0 = SubResource("TileSetAtlasSource_tcsh7")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_stmol"]
+size = Vector2(34, 35)
+
 [node name="Start" type="Node2D"]
 script = ExtResource("1_auot1")
 
@@ -1228,20 +1231,20 @@ layer_0/tile_data = PackedInt32Array(0, 0, 0, 65536, 0, 1, 131072, 0, 2, 196608,
 [node name="Torch" parent="Objects" instance=ExtResource("5_4ewwf")]
 position = Vector2(53, 66)
 
-[node name="Objects#Torch3" parent="." instance=ExtResource("5_4ewwf")]
+[node name="Torch3" parent="Objects" instance=ExtResource("5_4ewwf")]
 position = Vector2(58, 558)
 
-[node name="Objects#Torch4" parent="." instance=ExtResource("5_4ewwf")]
+[node name="Torch4" parent="Objects" instance=ExtResource("5_4ewwf")]
 position = Vector2(1056, 555)
 
-[node name="Objects#Torch2" parent="." instance=ExtResource("5_4ewwf")]
+[node name="Torch2" parent="Objects" instance=ExtResource("5_4ewwf")]
 visible = false
 position = Vector2(1064, 30)
 
-[node name="Objects#Chest" parent="." instance=ExtResource("4_74nnl")]
+[node name="Chest" parent="Objects" instance=ExtResource("4_74nnl")]
 position = Vector2(680, 231)
 
-[node name="Objects#Chest2" parent="." instance=ExtResource("4_74nnl")]
+[node name="Chest2" parent="Objects" instance=ExtResource("4_74nnl")]
 position = Vector2(325, 234)
 
 [node name="red" parent="." instance=ExtResource("1_rthnv")]
