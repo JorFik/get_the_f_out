@@ -1,8 +1,14 @@
 [gd_scene load_steps=6 format=3 uid="uid://cmwma0ji1u7jd"]
 
+<<<<<<< HEAD
 [ext_resource type="Texture2D" uid="uid://w1qcax0cpdnt" path="res://Resources/andrew-suryadi-spooky-mansion-218358276.jpg" id="1_7qwa2"]
 [ext_resource type="Script" path="res://src/Backgroound.gd" id="2_4nty1"]
 [ext_resource type="FontFile" uid="uid://bvehkghp7x5o3" path="res://Resources/burtons_nightmare/NITEMARE.TTF" id="3_sc06v"]
+=======
+[ext_resource type="Texture2D" uid="uid://dskkpc78i6whg" path="res://Resources/andrew-suryadi-spooky-mansion-218358276.jpg" id="1_7qwa2"]
+[ext_resource type="Script" path="res://src/Backgroound.gd" id="2_4nty1"]
+[ext_resource type="FontFile" uid="uid://bxyb1tkic3h5x" path="res://Resources/burtons_nightmare/NITEMARE.TTF" id="3_sc06v"]
+>>>>>>> 46acfb169133095b98b4b555fb220d0758bab989
 [ext_resource type="Script" path="res://src/Start.gd" id="4_e0yu3"]
 [ext_resource type="Script" path="res://src/RichTextLabel.gd" id="5_yndoc"]
 
