@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cu72n2kh080bf"]
+[gd_scene load_steps=6 format=3 uid="uid://dcpxv4c1kotek"]
 
 [ext_resource type="Texture2D" uid="uid://bm0qfwwwtculd" path="res://Resources/my-first-tile-set-indoor-mansion-layout-500-tiles-16x16-v0-644umqntub3c1.png" id="1_06not"]
 [ext_resource type="Texture2D" uid="uid://jiltybhmp41y" path="res://Resources/haunted tileset.jpg" id="2_4n1dm"]
