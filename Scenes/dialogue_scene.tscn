@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://dlysjvsc8xlwo"]
+
+[ext_resource type="Texture2D" uid="uid://4bkpacw8tjgc" path="res://texture/wall1.png" id="1_otghy"]
+[ext_resource type="Texture2D" uid="uid://dhoy2jyjkl16p" path="res://texture/Stuhl.png" id="2_8cjlq"]
+[ext_resource type="Texture2D" uid="uid://br8bkdstywfj8" path="res://texture/old man.png" id="3_4wr3e"]
+[ext_resource type="Texture2D" uid="uid://dc7ryodiluf7b" path="res://texture/schrank.png" id="4_rlwdw"]
+
+[node name="DialogueScene" type="Node2D"]
+z_index = 50
+
+[node name="Wall1" type="Sprite2D" parent="."]
+position = Vector2(576, 325)
+scale = Vector2(18.0391, 10.2266)
+texture = ExtResource("1_otghy")
+
+[node name="Stuhl" type="Sprite2D" parent="."]
+position = Vector2(772, 443)
+texture = ExtResource("2_8cjlq")
+
+[node name="OldMan" type="Sprite2D" parent="."]
+position = Vector2(215, 497)
+scale = Vector2(10.875, 10.875)
+texture = ExtResource("3_4wr3e")
+
+[node name="Schrank" type="Sprite2D" parent="."]
+position = Vector2(1000, 281.667)
+scale = Vector2(5.26667, 5.26667)
+texture = ExtResource("4_rlwdw")

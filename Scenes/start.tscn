@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cjgmor642bipd"]
+[gd_scene load_steps=12 format=3 uid="uid://cjgmor642bipd"]
 
 [ext_resource type="PackedScene" uid="uid://rntxee5ikkkn" path="res://Scenes/red.tscn" id="1_rthnv"]
 [ext_resource type="Texture2D" uid="uid://cdbglu8oyb68x" path="res://Resources/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png" id="2_6yta7"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://3v5v1o6rayjm" path="res://Scenes/Obstacles/chest.tscn" id="4_74nnl"]
 [ext_resource type="PackedScene" uid="uid://d4m0rngcpoklw" path="res://chararcters/sample_npc.tscn" id="4_hcql4"]
 [ext_resource type="PackedScene" uid="uid://blekvi2c2tnxk" path="res://Scenes/Obstacles/torch.tscn" id="5_4ewwf"]
+[ext_resource type="PackedScene" uid="uid://dlysjvsc8xlwo" path="res://Scenes/dialogue_scene.tscn" id="8_oo1sq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0t5i7"]
 texture = ExtResource("2_6yta7")
@@ -1147,3 +1148,6 @@ position = Vector2(325, 234)
 
 [node name="sample_npc" parent="." instance=ExtResource("4_hcql4")]
 position = Vector2(490, 549)
+
+[node name="DialogueSceneGeezer" parent="." instance=ExtResource("8_oo1sq")]
+position = Vector2(861.329, 265.823)
