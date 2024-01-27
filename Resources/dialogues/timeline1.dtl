@@ -1,9 +1,0 @@
-if {first_time} == 1:
-	Now solve my riddle boy
-	[signal arg="riddle1"]
-	bye ^_^
-	[wait time="0.1"]
-	set {first_time} = 0
-else:
-	This is not our first dialogue.
-	[wait time="0.1"]
