@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-[gd_scene load_steps=14 format=3 uid="uid://cjgmor642bipd"]
-=======
 [gd_scene load_steps=9 format=3 uid="uid://cjgmor642bipd"]
->>>>>>> master
 
 [ext_resource type="Script" path="res://Scenes/start.gd" id="1_auot1"]
 [ext_resource type="PackedScene" uid="uid://rntxee5ikkkn" path="res://Scenes/red.tscn" id="1_rthnv"]
@@ -1261,7 +1257,7 @@ position = Vector2(5, 19)
 
 [node name="red" parent="." instance=ExtResource("1_rthnv")]
 position = Vector2(583, 591)
-script = ExtResource("3_gax2p")
+script = ExtResource("3_gax2p") 
 
 [node name="npc_butler" parent="." instance=ExtResource("9_t7ljs")]
 position = Vector2(880, 352)
