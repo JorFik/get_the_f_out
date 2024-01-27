@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://cjgmor642bipd"]
+[gd_scene load_steps=8 format=3 uid="uid://cjgmor642bipd"]
 
 [ext_resource type="Script" path="res://Scenes/start.gd" id="1_auot1"]
 [ext_resource type="PackedScene" uid="uid://rntxee5ikkkn" path="res://Scenes/red.tscn" id="1_rthnv"]
 [ext_resource type="Texture2D" uid="uid://jiltybhmp41y" path="res://Resources/haunted tileset.jpg" id="2_kab8f"]
 [ext_resource type="Script" path="res://src/red.gd" id="3_gax2p"]
+[ext_resource type="PackedScene" uid="uid://c3d1rcxdlv745" path="res://Scenes/HUD/hud.tscn" id="5_3tfdw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tcsh7"]
 texture = ExtResource("2_kab8f")
@@ -1228,5 +1229,7 @@ position = Vector2(583, 591)
 script = ExtResource("3_gax2p")
 
 [node name="Door" type="Area2D" parent="."]
+
+[node name="HUD" parent="." instance=ExtResource("5_3tfdw")]
 
 [connection signal="body_entered" from="Door" to="." method="_on_door_body_entered"]
