@@ -11,7 +11,6 @@ func _process(_delta):
 		correct.emit()
 func _on_input_output(text):
 	input1 = text
-	
 
 func _on_input_2_output(text):
 	input2 = text

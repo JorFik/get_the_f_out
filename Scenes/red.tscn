@@ -1,7 +1,7 @@
-[gd_scene load_steps=25 format=3 uid="uid://rntxee5ikkkn"]
+[gd_scene load_steps=26 format=3 uid="uid://rntxee5ikkkn"]
 
 [ext_resource type="Script" path="res://Scenes/red.gd" id="1_4w63a"]
-[ext_resource type="Texture2D" uid="uid://bdtpm25ke7ncu" path="res://Resources/overworld_sprite_template_for_pokemon_games_by_cynthiacelestic-d8h0v36-1141318516.png" id="1_w2my3"]
+[ext_resource type="Texture2D" uid="uid://c88tue5ma4qyj" path="res://Resources/overworld_sprite_template_for_pokemon_games_by_cynthiacelestic-d8h0v36-1141318516.png" id="1_w2my3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f4xir"]
 atlas = ExtResource("1_w2my3")
@@ -190,6 +190,9 @@ animations = [{
 radius = 12.0
 height = 38.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jpdpc"]
+size = Vector2(29, 42)
+
 [node name="CharacterBody2D" type="CharacterBody2D"]
 texture_filter = 1
 position = Vector2(300, 85)
@@ -206,3 +209,11 @@ autoplay = "idle_up"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_yiqv7")
+
+[node name="Area2D_mainchar" type="Area2D" parent="."]
+
+[node name="CollisionShape2D_mainchar" type="CollisionShape2D" parent="Area2D_mainchar"]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_jpdpc")
+
+[connection signal="area_entered" from="Area2D_mainchar" to="." method="_on_area_2d_mainchar_area_entered"]
