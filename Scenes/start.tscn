@@ -4020,7 +4020,6 @@ shape = SubResource("RectangleShape2D_stmol")
 position = Vector2(975, 801)
 
 [node name="Number RIddle" parent="Riddles" instance=ExtResource("2_ipykl")]
-visible = false
 position = Vector2(-417, -392)
 
 [node name="Marker2D" type="Marker2D" parent="."]

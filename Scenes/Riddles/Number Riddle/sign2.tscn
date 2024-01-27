@@ -1,8 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://c8m355eltbadl"]
+[gd_scene load_steps=11 format=3 uid="uid://bupb2dsp1k7aa"]
 
-[ext_resource type="Texture2D" uid="uid://crg4fqd4k41d1" path="res://Scenes/Riddles/Number Riddle/stone_prev_no_background 2.png" id="1_sqoug"]
+[ext_resource type="Texture2D" uid="uid://cpnax052qplka" path="res://Scenes/Riddles/Number Riddle/stone_prev_no_background 2.png" id="1_sqoug"]
 [ext_resource type="Script" path="res://Scenes/Riddles/Number Riddle/sign.gd" id="2_2yj3y"]
-[ext_resource type="Texture2D" uid="uid://bnfcplfoqohb0" path="res://Scenes/Riddles/Number Riddle/raetsel_2.png" id="3_jmhtl"]
+[ext_resource type="Texture2D" uid="uid://bgeblcjxl1svk" path="res://Scenes/Riddles/Number Riddle/raetsel_2.png" id="3_jmhtl"]
 [ext_resource type="PackedScene" uid="uid://bhhocxidfti4q" path="res://Scenes/Riddles/Number Riddle/input.tscn" id="4_vx7db"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vr57s"]

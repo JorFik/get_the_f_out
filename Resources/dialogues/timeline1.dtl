@@ -1,10 +1,10 @@
 if {first_time} == 1:
 	Now solve my riddle boy
-	[signal arg="riddle1"]
 	bye ^_^
 	[wait time="0.1"]
 	set {first_time} = 0
+	[signal arg="riddle1"]
 else:
+	[signal arg="entered_addit_talk"]
 	This is not our first dialogue.
 	[wait time="0.1"]
-	[end_timeline]
