@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://cr8522jmx24y5"]
+
+[ext_resource type="Script" path="res://src/npc_butler.gd" id="1_hpdj4"]
+[ext_resource type="Texture2D" uid="uid://cpavdh2hxtim5" path="res://texture/butler-front.png" id="2_sm4rr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w5ngi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_sm4rr")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fht3i"]
+size = Vector2(20, 43)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u1l0m"]
+size = Vector2(9.69125, 15.8977)
+
+[node name="npc_butler" type="CharacterBody2D"]
+script = ExtResource("1_hpdj4")
+
+[node name="AnimatedSprite2D_npc" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -1)
+scale = Vector2(0.65625, 0.650229)
+sprite_frames = SubResource("SpriteFrames_w5ngi")
+
+[node name="SampleNpcCollisionShape_npc" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1.5)
+shape = SubResource("RectangleShape2D_fht3i")
+
+[node name="SampleNpcArea2D_npc" type="Area2D" parent="." groups=["npc_group"]]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D_npc" type="CollisionShape2D" parent="SampleNpcArea2D_npc"]
+position = Vector2(1, -2)
+scale = Vector2(3.2389, 2.88246)
+shape = SubResource("RectangleShape2D_u1l0m")
+debug_color = Color(0.933333, 0.101961, 0.588235, 0.419608)
+
+[connection signal="area_entered" from="SampleNpcArea2D_npc" to="." method="_on_sample_npc_area_2d_area_entered"]
