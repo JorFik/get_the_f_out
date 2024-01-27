@@ -4,6 +4,7 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -300.0
 
+var	player_is_talking = false
 var is_on_floor = true
 const GRAVITY = 1.5
 const JUMP_STRENGTH = 20
@@ -27,6 +28,8 @@ func get_input():
 
 func _physics_process(delta):
 	## Add the gravity.
+	if player_is_talking:
+		return
 	input = get_input()
 	if Input.is_action_just_pressed("jump") and is_on_floor == true:
 		z_velocity -= JUMP_STRENGTH
@@ -84,4 +87,13 @@ func _on_area_2d_mainchar_area_entered(area):
 	if overl_bodies.size() > 0:
 		overl_body = overl_bodies.front()
 	if (overl_body.has_method("init_dial")):
+		sprite_2d.animation = "idle_down"
+		player_is_talking = true
+		Dialogic.timeline_ended.connect(_on_timeline_ended)
 		overl_body.init_dial()
+
+
+
+func _on_timeline_ended():
+	Dialogic.timeline_ended.disconnect(_on_timeline_ended)
+	player_is_talking = false
