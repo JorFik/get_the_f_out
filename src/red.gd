@@ -17,12 +17,6 @@ func get_input():
 		input.y = int(Input.is_action_pressed("down")) - int(Input.is_action_pressed("up"))
 	return input.normalized()
 
-func idle():
-	if sprite_2d.animation == "idle_right" || sprite_2d.animation == "idle_left"\
-	|| sprite_2d.animation == "idle_up" || sprite_2d.animation == "idle_down":
-		return 0
-	return 1
-
 func player_movement(delta):
 	input = get_input()
 	if (Vector2.ZERO == input):
