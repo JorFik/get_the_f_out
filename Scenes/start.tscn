@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cjgmor642bipd"]
+[gd_scene load_steps=11 format=3 uid="uid://cjgmor642bipd"]
 
 [ext_resource type="PackedScene" uid="uid://rntxee5ikkkn" path="res://Scenes/red.tscn" id="1_rthnv"]
 [ext_resource type="Texture2D" uid="uid://cdbglu8oyb68x" path="res://Resources/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png" id="2_6yta7"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://src/red.gd" id="3_gax2p"]
 [ext_resource type="PackedScene" uid="uid://3v5v1o6rayjm" path="res://Scenes/Obstacles/chest.tscn" id="4_74nnl"]
 [ext_resource type="PackedScene" uid="uid://blekvi2c2tnxk" path="res://Scenes/Obstacles/torch.tscn" id="5_4ewwf"]
+[ext_resource type="PackedScene" uid="uid://c3d1rcxdlv745" path="res://Scenes/HUD/hud.tscn" id="7_on6ml"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0t5i7"]
 texture = ExtResource("2_6yta7")
@@ -1142,5 +1143,6 @@ position = Vector2(325, 234)
 
 [node name="red" parent="." instance=ExtResource("1_rthnv")]
 position = Vector2(583, 591)
-scale = Vector2(1, 1)
 script = ExtResource("3_gax2p")
+
+[node name="HUD" parent="." instance=ExtResource("7_on6ml")]
