@@ -1,15 +1,16 @@
-[gd_scene load_steps=10 format=3 uid="uid://cjgmor642bipd"]
+[gd_scene load_steps=15 format=3 uid="uid://cjgmor642bipd"]
 
 [ext_resource type="Script" path="res://Scenes/start.gd" id="1_auot1"]
 [ext_resource type="PackedScene" uid="uid://rntxee5ikkkn" path="res://Scenes/red.tscn" id="1_rthnv"]
+[ext_resource type="PackedScene" uid="uid://bymftngoicm7l" path="res://Scenes/Riddles/Number Riddle/number_riddle.tscn" id="2_ipykl"]
 [ext_resource type="Texture2D" uid="uid://jiltybhmp41y" path="res://Resources/haunted tileset.jpg" id="2_kab8f"]
 [ext_resource type="Script" path="res://src/red.gd" id="3_gax2p"]
 [ext_resource type="PackedScene" uid="uid://3v5v1o6rayjm" path="res://Scenes/Obstacles/chest.tscn" id="4_74nnl"]
-[ext_resource type="PackedScene" uid="uid://bfnuxuj8f5c6c" path="res://chararcters/sample_npc.tscn" id="4_hcql4"]
+[ext_resource type="PackedScene" uid="uid://bh43laytebyva" path="res://chararcters/sample_npc.tscn" id="4_hcql4"]
 [ext_resource type="PackedScene" uid="uid://blekvi2c2tnxk" path="res://Scenes/Obstacles/torch.tscn" id="5_4ewwf"]
-[ext_resource type="PackedScene" uid="uid://314tx730r88e" path="res://Scenes/dialogue_scene.tscn" id="8_oo1sq"]
-[ext_resource type="PackedScene" uid="uid://bbdkl5ppi5e6r" path="res://chararcters/npc_butler.tscn" id="9_t7ljs"]
-[ext_resource type="PackedScene" uid="uid://e3b0xdeloifv" path="res://Scenes/dialogue_butler_scene.tscn" id="10_rcbop"]
+[ext_resource type="PackedScene" uid="uid://52sk0gqxefta" path="res://Scenes/dialogue_scene.tscn" id="8_oo1sq"]
+[ext_resource type="PackedScene" uid="uid://ens4vbamlcqp" path="res://chararcters/npc_butler.tscn" id="9_t7ljs"]
+[ext_resource type="PackedScene" uid="uid://d14ly37cexh4k" path="res://Scenes/dialogue_butler_scene.tscn" id="10_rcbop"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tcsh7"]
 texture = ExtResource("2_kab8f")
@@ -1256,11 +1257,11 @@ position = Vector2(490, 549)
 
 [node name="DialogueSceneGeezer" parent="." instance=ExtResource("8_oo1sq")]
 visible = false
-position = Vector2(5, 19)
+position = Vector2(-4, 0)
 
 [node name="red" parent="." instance=ExtResource("1_rthnv")]
 position = Vector2(583, 591)
-script = ExtResource("3_gax2p") 
+script = ExtResource("3_gax2p")
 
 [node name="npc_butler" parent="." instance=ExtResource("9_t7ljs")]
 position = Vector2(880, 352)
@@ -1268,10 +1269,15 @@ position = Vector2(880, 352)
 [node name="DialogueSceneButler" parent="." instance=ExtResource("10_rcbop")]
 visible = false
 position = Vector2(-3, -2)
+
 [node name="Door" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Door"]
 position = Vector2(903, 17.5)
 shape = SubResource("RectangleShape2D_stmol")
+
+[node name="Number RIddle" parent="." instance=ExtResource("2_ipykl")]
+visible = false
+position = Vector2(569, 1225)
 
 [connection signal="body_entered" from="Door" to="." method="_on_door_body_entered"]
