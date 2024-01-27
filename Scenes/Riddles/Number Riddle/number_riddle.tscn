@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bymftngoicm7l"]
 
-[ext_resource type="Script" path="res://scenes/Objects/number_riddle.gd" id="1_4vssw"]
-[ext_resource type="PackedScene" uid="uid://cgucruso0mkqe" path="res://scenes/Objects/sign.tscn" id="2_7p43w"]
+[ext_resource type="Script" path="res://Scenes/Riddles/Number Riddle/number_riddle.gd" id="1_4vssw"]
+[ext_resource type="PackedScene" uid="uid://cgucruso0mkqe" path="res://Scenes/Riddles/Number Riddle/sign.tscn" id="2_7p43w"]
 
 [node name="Number RIddle" type="Node2D"]
 script = ExtResource("1_4vssw")
