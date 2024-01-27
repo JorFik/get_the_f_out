@@ -197,8 +197,9 @@ wall_min_slide_angle = 0.0
 script = ExtResource("1_0j45d")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
 sprite_frames = SubResource("SpriteFrames_1ddq2")
-animation = &"idle_up"
+animation = &"idle_right"
 autoplay = "idle_up"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
