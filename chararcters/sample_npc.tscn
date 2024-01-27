@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://d4m0rngcpoklw"]
+[gd_scene load_steps=6 format=3 uid="uid://bfnuxuj8f5c6c"]
 
 [ext_resource type="Script" path="res://chararcters/sample_npc.gd" id="1_rthf8"]
 [ext_resource type="Texture2D" uid="uid://dvgfmy6vtvjji" path="res://chararcters/slime/slime_body.png" id="1_yhoye"]

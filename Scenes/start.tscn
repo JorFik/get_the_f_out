@@ -5,11 +5,11 @@
 [ext_resource type="Texture2D" uid="uid://c6dydy014vanq" path="res://Resources/16x16 dungeon ii wall reconfig/16x16 dungeon ii wall reconfig v04 spritesheet.png" id="2_f40gs"]
 [ext_resource type="Script" path="res://src/red.gd" id="3_gax2p"]
 [ext_resource type="PackedScene" uid="uid://3v5v1o6rayjm" path="res://Scenes/Obstacles/chest.tscn" id="4_74nnl"]
-[ext_resource type="PackedScene" uid="uid://d4m0rngcpoklw" path="res://chararcters/sample_npc.tscn" id="4_hcql4"]
+[ext_resource type="PackedScene" uid="uid://bfnuxuj8f5c6c" path="res://chararcters/sample_npc.tscn" id="4_hcql4"]
 [ext_resource type="PackedScene" uid="uid://blekvi2c2tnxk" path="res://Scenes/Obstacles/torch.tscn" id="5_4ewwf"]
-[ext_resource type="PackedScene" uid="uid://dlysjvsc8xlwo" path="res://Scenes/dialogue_scene.tscn" id="8_oo1sq"]
-[ext_resource type="PackedScene" uid="uid://bkrn8kvn8qrfy" path="res://chararcters/npc_butler.tscn" id="9_t7ljs"]
-[ext_resource type="PackedScene" uid="uid://dyw7n7iyoiqmg" path="res://Scenes/dialogue_butler_scene.tscn" id="10_rcbop"]
+[ext_resource type="PackedScene" uid="uid://314tx730r88e" path="res://Scenes/dialogue_scene.tscn" id="8_oo1sq"]
+[ext_resource type="PackedScene" uid="uid://bbdkl5ppi5e6r" path="res://chararcters/npc_butler.tscn" id="9_t7ljs"]
+[ext_resource type="PackedScene" uid="uid://e3b0xdeloifv" path="res://Scenes/dialogue_butler_scene.tscn" id="10_rcbop"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0t5i7"]
 texture = ExtResource("2_6yta7")

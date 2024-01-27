@@ -1,9 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dlysjvsc8xlwo"]
+[gd_scene load_steps=5 format=3 uid="uid://314tx730r88e"]
 
-[ext_resource type="Texture2D" uid="uid://4bkpacw8tjgc" path="res://texture/wall1.png" id="1_otghy"]
-[ext_resource type="Texture2D" uid="uid://dhoy2jyjkl16p" path="res://texture/Stuhl.png" id="2_8cjlq"]
-[ext_resource type="Texture2D" uid="uid://br8bkdstywfj8" path="res://texture/old man.png" id="3_4wr3e"]
-[ext_resource type="Texture2D" uid="uid://dc7ryodiluf7b" path="res://texture/schrank.png" id="4_rlwdw"]
+[ext_resource type="Texture2D" uid="uid://bh7h1hch7lg8m" path="res://texture/wall1.png" id="1_otghy"]
+[ext_resource type="Texture2D" uid="uid://dlfsgehyqfruj" path="res://texture/Stuhl.png" id="2_8cjlq"]
+[ext_resource type="Texture2D" uid="uid://bhhiibxw6rj14" path="res://texture/old man.png" id="3_4wr3e"]
+[ext_resource type="Texture2D" uid="uid://c3pk0fibt2tvw" path="res://texture/schrank.png" id="4_rlwdw"]
 
 [node name="DialogueScene" type="Node2D"]
 z_index = 50
