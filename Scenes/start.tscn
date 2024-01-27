@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://cjgmor642bipd"]
+[gd_scene load_steps=5 format=3 uid="uid://cjgmor642bipd"]
 
 [ext_resource type="PackedScene" uid="uid://rntxee5ikkkn" path="res://Scenes/red.tscn" id="1_rthnv"]
 [ext_resource type="Texture2D" uid="uid://cdbglu8oyb68x" path="res://Resources/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png" id="2_6yta7"]
-[ext_resource type="Script" path="res://Scenes/red.gd" id="3_gax2p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0t5i7"]
 texture = ExtResource("2_6yta7")
@@ -386,5 +385,3 @@ layer_0/tile_data = PackedInt32Array(-2359332, 0, 0, -2293796, 0, 1, -2228260, 0
 
 [node name="red" parent="." instance=ExtResource("1_rthnv")]
 position = Vector2(583, 591)
-motion_mode = 1
-script = ExtResource("3_gax2p")
