@@ -3984,6 +3984,7 @@ position = Vector2(1193, 1475)
 scale = Vector2(2, 2)
 
 [node name="Door" type="Area2D" parent="."]
+position = Vector2(995, -768)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Door"]
 position = Vector2(701, 1187)
