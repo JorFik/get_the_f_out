@@ -1,0 +1,89 @@
+[gd_scene load_steps=6 format=3 uid="uid://cmwma0ji1u7jd"]
+
+[ext_resource type="Texture2D" uid="uid://ci3aehd6voinc" path="res://Resources/andrew-suryadi-spooky-mansion-218358276.jpg" id="1_7qwa2"]
+[ext_resource type="Script" path="res://src/Backgroound.gd" id="2_4nty1"]
+[ext_resource type="FontFile" uid="uid://b4usun5arj0w7" path="res://Resources/burtons_nightmare/NITEMARE.TTF" id="3_sc06v"]
+[ext_resource type="Script" path="res://src/Start.gd" id="4_e0yu3"]
+[ext_resource type="Script" path="res://src/RichTextLabel.gd" id="5_yndoc"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Backgroound" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -18.0
+offset_right = 2326.0
+offset_bottom = 1340.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_7qwa2")
+script = ExtResource("2_4nty1")
+
+[node name="Start" type="Button" parent="Backgroound"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -124.0
+offset_top = 72.0
+offset_right = 120.0
+offset_bottom = 146.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_sc06v")
+theme_override_font_sizes/font_size = 45
+text = "START
+"
+script = ExtResource("4_e0yu3")
+
+[node name="End" type="Button" parent="Backgroound"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -122.0
+offset_top = 188.0
+offset_right = 122.0
+offset_bottom = 262.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_sc06v")
+theme_override_font_sizes/font_size = 45
+text = "QUIT
+"
+script = ExtResource("4_e0yu3")
+
+[node name="Title" type="RichTextLabel" parent="Backgroound"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -414.0
+offset_top = 204.0
+offset_right = 422.0
+offset_bottom = 640.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0.368627, 0, 0.0862745, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 15
+theme_override_constants/shadow_outline_size = 50
+theme_override_fonts/normal_font = ExtResource("3_sc06v")
+theme_override_font_sizes/normal_font_size = 150
+bbcode_enabled = true
+text = "[center]Get
+The F**k Out"
+script = ExtResource("5_yndoc")
+
+[connection signal="pressed" from="Backgroound/Start" to="Backgroound" method="_on_start_pressed"]
+[connection signal="pressed" from="Backgroound/End" to="Backgroound" method="_on_end_pressed"]
+[connection signal="pressed" from="Backgroound/End" to="Backgroound" method="_on_start_pressed"]
