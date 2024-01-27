@@ -1,7 +1,7 @@
 [gd_scene load_steps=25 format=3 uid="uid://rntxee5ikkkn"]
 
-[ext_resource type="Script" path="res://Scenes/red.gd" id="1_4w63a"]
-[ext_resource type="Texture2D" uid="uid://bg7xh4xja306b" path="res://Resources/overworld_sprite_template_for_pokemon_games_by_cynthiacelestic-d8h0v36-1141318516.png" id="1_w2my3"]
+[ext_resource type="Script" path="res://Scenes/red.gd" id="1_e406d"]
+[ext_resource type="Texture2D" uid="uid://ct28l5rrsao47" path="res://Resources/overworld_sprite_template_for_pokemon_games_by_cynthiacelestic-d8h0v36-1141318516.png" id="1_w2my3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f4xir"]
 atlas = ExtResource("1_w2my3")
@@ -186,23 +186,22 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yiqv7"]
-radius = 12.0
-height = 38.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q6nvx"]
+size = Vector2(24, 40.5)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 texture_filter = 1
 position = Vector2(300, 85)
 motion_mode = 1
 wall_min_slide_angle = 0.0
-script = ExtResource("1_4w63a")
+script = ExtResource("1_e406d")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 unique_name_in_owner = true
-position = Vector2(0, -3)
 sprite_frames = SubResource("SpriteFrames_1ddq2")
 animation = &"idle_right"
 autoplay = "idle_up"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_yiqv7")
+position = Vector2(0, 1.75)
+shape = SubResource("RectangleShape2D_q6nvx")
