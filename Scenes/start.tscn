@@ -14789,6 +14789,14 @@ scale = Vector2(5.16926, 4.86149)
 position = Vector2(369, 523)
 scale = Vector2(1.26661, 1.70441)
 
+[node name="Obstacle8" parent="Walk on Table" instance=ExtResource("9_emrcd")]
+position = Vector2(1627, 510)
+scale = Vector2(1.26661, 1.70441)
+
+[node name="Obstacle10" parent="Walk on Table" instance=ExtResource("9_emrcd")]
+position = Vector2(1629, 654)
+scale = Vector2(1.26661, 1.70441)
+
 [node name="Obstacle9" parent="Walk on Table" instance=ExtResource("9_emrcd")]
 position = Vector2(371, 679)
 scale = Vector2(1.26661, 1.70441)
@@ -14829,6 +14837,16 @@ metadata/Height = 45.0
 
 [node name="Surface11" parent="Walk on Table" instance=ExtResource("10_o7qyy")]
 position = Vector2(588, 693)
+scale = Vector2(-0.185862, 0.228145)
+metadata/Height = 45.0
+
+[node name="Surface12" parent="Walk on Table" instance=ExtResource("10_o7qyy")]
+position = Vector2(1851, 674)
+scale = Vector2(-0.185862, 0.228145)
+metadata/Height = 45.0
+
+[node name="Surface13" parent="Walk on Table" instance=ExtResource("10_o7qyy")]
+position = Vector2(1858, 828)
 scale = Vector2(-0.185862, 0.228145)
 metadata/Height = 45.0
 
