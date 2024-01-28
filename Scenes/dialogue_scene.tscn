@@ -1,0 +1,105 @@
+[gd_scene load_steps=9 format=3 uid="uid://bq0kbgipiv6qa"]
+
+[ext_resource type="Texture2D" uid="uid://dlo2jd8w1oa86" path="res://texture/texture-for-room/wall3.png" id="1_6nddm"]
+[ext_resource type="Texture2D" uid="uid://duae2acye7x8t" path="res://texture/texture-for-room/wall2.png" id="2_s7oc4"]
+[ext_resource type="Texture2D" uid="uid://cp4p2qhtb65t" path="res://texture/texture-for-room/sidewall.png" id="3_4im7k"]
+[ext_resource type="Texture2D" uid="uid://bhonbgbeid02x" path="res://texture/old man.png" id="3_4wr3e"]
+[ext_resource type="Texture2D" uid="uid://cclu38bt74bbo" path="res://texture/texture-for-room/wall1.png" id="4_47n3r"]
+[ext_resource type="Texture2D" uid="uid://kkvpbtut0kcm" path="res://texture/texture-for-room/wall-fire-torch.png" id="5_hqwcb"]
+[ext_resource type="Texture2D" uid="uid://dv4xtvii4pcgr" path="res://texture/floor1.png" id="6_o5rx4"]
+[ext_resource type="Texture2D" uid="uid://b4vmd0ceyh36f" path="res://texture/butler-front.png" id="7_pdyow"]
+
+[node name="DialogueScene2" type="Node2D"]
+z_index = 50
+position = Vector2(9, 9)
+
+[node name="Wall3" type="Sprite2D" parent="."]
+position = Vector2(1188, 1299)
+scale = Vector2(11.5312, 6.15625)
+texture = ExtResource("1_6nddm")
+
+[node name="Wall2" type="Sprite2D" parent="."]
+position = Vector2(203, 1299)
+scale = Vector2(6.5625, 6.21875)
+texture = ExtResource("2_s7oc4")
+
+[node name="Wall6" type="Sprite2D" parent="."]
+position = Vector2(612, 1299)
+scale = Vector2(6.46875, 6.15625)
+texture = ExtResource("2_s7oc4")
+
+[node name="Wall5" type="Sprite2D" parent="."]
+position = Vector2(2176, 1297)
+scale = Vector2(6.46875, 6.09375)
+texture = ExtResource("2_s7oc4")
+
+[node name="Wall4" type="Sprite2D" parent="."]
+position = Vector2(1764, 1298)
+scale = Vector2(6.46875, 6.125)
+texture = ExtResource("2_s7oc4")
+
+[node name="Sidewall" type="Sprite2D" parent="."]
+position = Vector2(201, 896)
+scale = Vector2(6.3125, 6.25)
+texture = ExtResource("3_4im7k")
+
+[node name="Wall7" type="Sprite2D" parent="."]
+position = Vector2(1183, 540)
+rotation = 3.14159
+scale = Vector2(37.5937, 17.2501)
+texture = ExtResource("1_6nddm")
+
+[node name="Wall1" type="Sprite2D" parent="."]
+position = Vector2(996, 292)
+scale = Vector2(31.3438, 9.3125)
+texture = ExtResource("4_47n3r")
+
+[node name="Sidewall4" type="Sprite2D" parent="."]
+position = Vector2(1714, 883)
+scale = Vector2(6.92969, 6.09375)
+texture = ExtResource("3_4im7k")
+
+[node name="Wall-fire-torch4" type="Sprite2D" parent="."]
+position = Vector2(1187, 742)
+scale = Vector2(37.1953, 11.0625)
+texture = ExtResource("5_hqwcb")
+
+[node name="Sidewall3" type="Sprite2D" parent="."]
+position = Vector2(1162, 813)
+scale = Vector2(9.87109, 6.09375)
+texture = ExtResource("3_4im7k")
+
+[node name="Wall-fire-torch3" type="Sprite2D" parent="."]
+position = Vector2(1492, 342)
+scale = Vector2(26.9844, 11.0625)
+texture = ExtResource("5_hqwcb")
+
+[node name="Sidewall2" type="Sprite2D" parent="."]
+position = Vector2(1492, 310)
+scale = Vector2(14.3828, 8.0625)
+texture = ExtResource("3_4im7k")
+
+[node name="Wall-fire-torch" type="Sprite2D" parent="."]
+position = Vector2(2016, 665)
+scale = Vector2(7.59375, 7.65625)
+texture = ExtResource("5_hqwcb")
+
+[node name="Wall-fire-torch2" type="Sprite2D" parent="."]
+position = Vector2(413, 667)
+scale = Vector2(7.59375, 7.65625)
+texture = ExtResource("5_hqwcb")
+
+[node name="Floor1" type="Sprite2D" parent="."]
+position = Vector2(1217, 1641)
+scale = Vector2(38.6562, 4.60938)
+texture = ExtResource("6_o5rx4")
+
+[node name="Butler-front" type="Sprite2D" parent="."]
+position = Vector2(1713, 1008)
+scale = Vector2(18.3438, 19.4688)
+texture = ExtResource("7_pdyow")
+
+[node name="OldMan" type="Sprite2D" parent="."]
+position = Vector2(629, 1078)
+scale = Vector2(19.1562, 18.4375)
+texture = ExtResource("3_4wr3e")

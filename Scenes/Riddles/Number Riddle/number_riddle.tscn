@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bymftngoicm7l"]
+
+[ext_resource type="Script" path="res://Scenes/Riddles/Number Riddle/number_riddle.gd" id="1_4vssw"]
+[ext_resource type="PackedScene" uid="uid://c8m355eltbadl" path="res://Scenes/Riddles/Number Riddle/sign2.tscn" id="2_xdpr4"]
+
+[node name="Number RIddle" type="Node2D"]
+z_index = 36
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_4vssw")
+
+[node name="Sign2" parent="." instance=ExtResource("2_xdpr4")]
+position = Vector2(-20, 40)
+
+[connection signal="riddle_correct" from="." to="." method="_on_riddle_correct"]
+[connection signal="correct" from="Sign2" to="." method="_on_sign_2_correct"]

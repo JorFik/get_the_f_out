@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://cripn3i3up2h5"]
+
+[ext_resource type="Script" path="res://chararcters/sample_npc.gd" id="1_rthf8"]
+[ext_resource type="Texture2D" uid="uid://ytikviwwkpo1" path="res://chararcters/slime/slime_body.png" id="1_yhoye"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w5ngi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_yhoye")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yn4rk"]
+radius = 19.2354
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_k8n0l"]
+radius = 7.10118
+
+[node name="sample_npc" type="CharacterBody2D"]
+script = ExtResource("1_rthf8")
+
+[node name="AnimatedSprite2D_npc" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -1)
+scale = Vector2(0.201852, 0.2)
+sprite_frames = SubResource("SpriteFrames_w5ngi")
+
+[node name="SampleNpcCollisionShape_npc" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_yn4rk")
+
+[node name="SampleNpcArea2D_npc" type="Area2D" parent="." groups=["npc_group"]]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D_npc" type="CollisionShape2D" parent="SampleNpcArea2D_npc"]
+scale = Vector2(3.2389, 2.88246)
+shape = SubResource("CircleShape2D_k8n0l")
+debug_color = Color(0.933333, 0.101961, 0.588235, 0.419608)
+
+[connection signal="area_entered" from="SampleNpcArea2D_npc" to="." method="_on_sample_npc_area_2d_area_entered"]
