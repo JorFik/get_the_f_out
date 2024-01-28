@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://ens4vbamlcqp"]
+[gd_scene load_steps=6 format=3 uid="uid://bxh1ons50l14t"]
 
 [ext_resource type="Script" path="res://src/npc_butler.gd" id="1_hpdj4"]
-[ext_resource type="Texture2D" uid="uid://b4vmd0ceyh36f" path="res://texture/butler-front.png" id="2_sm4rr"]
+[ext_resource type="Texture2D" uid="uid://brofk3ffsf8u8" path="res://texture/butler-front.png" id="2_sm4rr"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_w5ngi"]
 animations = [{

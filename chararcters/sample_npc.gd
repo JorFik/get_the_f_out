@@ -13,6 +13,7 @@ func _ready():
 func _on_dialogic_signal(argument:String):
 	if argument == "oldman_happy":
 		get_node("/root/Start/DialogueSceneGeezer").visible = false
+		self.queue_free()
 	elif argument == "entered_addit_talk":
 		print("Entered second branch of dialogic timeline")
 	elif argument == "riddle1":
