@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bupb2dsp1k7aa"]
+[gd_scene load_steps=11 format=3 uid="uid://c8m355eltbadl"]
 
 [ext_resource type="Texture2D" uid="uid://cpnax052qplka" path="res://Scenes/Riddles/Number Riddle/stone_prev_no_background 2.png" id="1_sqoug"]
 [ext_resource type="Script" path="res://Scenes/Riddles/Number Riddle/sign.gd" id="2_2yj3y"]

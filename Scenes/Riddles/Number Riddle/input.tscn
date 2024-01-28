@@ -4,7 +4,6 @@
 [ext_resource type="FontFile" uid="uid://iota6ntf2ho5" path="res://Scenes/Riddles/Number Riddle/neuropol.otf" id="1_k3nlx"]
 
 [node name="Input" type="Node2D"]
-process_mode = 3
 script = ExtResource("1_amb6f")
 
 [node name="ColorRect2" type="ColorRect" parent="."]

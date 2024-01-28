@@ -24,6 +24,7 @@ Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
 directories/dch_directory={}
 directories/dtl_directory={
 "buttler_dialogue": "res://Resources/dialogues/buttler_dialogue.dtl",
+"oldman_after_riddle": "res://Resources/dialogues/oldman_after_riddle.dtl",
 "timeline1": "res://Resources/dialogues/timeline1.dtl"
 }
 text/letter_speed=0.01

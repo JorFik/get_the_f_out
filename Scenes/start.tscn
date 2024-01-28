@@ -3,11 +3,11 @@
 [ext_resource type="Script" path="res://Scenes/start.gd" id="1_auot1"]
 [ext_resource type="PackedScene" uid="uid://rntxee5ikkkn" path="res://Scenes/red.tscn" id="1_rthnv"]
 [ext_resource type="PackedScene" uid="uid://bymftngoicm7l" path="res://Scenes/Riddles/Number Riddle/number_riddle.tscn" id="2_ipykl"]
-[ext_resource type="Texture2D" uid="uid://nawsywbhbpej" path="res://Resources/haunted tileset.jpg" id="2_kab8f"]
-[ext_resource type="PackedScene" uid="uid://bh43laytebyva" path="res://chararcters/sample_npc.tscn" id="4_hcql4"]
-[ext_resource type="PackedScene" path="res://Scenes/dialogue_scene.tscn" id="8_oo1sq"]
+[ext_resource type="Texture2D" uid="uid://dipf1o87did1x" path="res://Resources/haunted tileset.jpg" id="2_kab8f"]
+[ext_resource type="PackedScene" uid="uid://cripn3i3up2h5" path="res://chararcters/sample_npc.tscn" id="4_hcql4"]
+[ext_resource type="PackedScene" uid="uid://bq0kbgipiv6qa" path="res://Scenes/dialogue_scene.tscn" id="8_oo1sq"]
 [ext_resource type="PackedScene" path="res://Scenes/Obstacles/obstacle.tscn" id="9_emrcd"]
-[ext_resource type="PackedScene" uid="uid://ens4vbamlcqp" path="res://chararcters/npc_butler.tscn" id="9_t7ljs"]
+[ext_resource type="PackedScene" path="res://chararcters/npc_butler.tscn" id="9_t7ljs"]
 [ext_resource type="PackedScene" path="res://Scenes/Obstacles/surface.tscn" id="10_o7qyy"]
 [ext_resource type="PackedScene" path="res://Scenes/dialogue_butler_scene.tscn" id="10_rcbop"]
 
@@ -3991,6 +3991,7 @@ shape = SubResource("RectangleShape2D_stmol")
 position = Vector2(975, 801)
 
 [node name="Number RIddle" parent="Riddles" instance=ExtResource("2_ipykl")]
+visible = false
 position = Vector2(-417, -392)
 
 [node name="Marker2D" type="Marker2D" parent="."]
