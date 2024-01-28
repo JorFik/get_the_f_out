@@ -9992,7 +9992,7 @@ position = Vector2(-6.875, 26)
 shape = SubResource("RectangleShape2D_tbul6")
 
 [node name="red" parent="." instance=ExtResource("2_afo4o")]
-position = Vector2(957, 1669)
+position = Vector2(953, 1675)
 scale = Vector2(2, 2)
 
 [connection signal="body_entered" from="Door" to="." method="_on_door_body_entered"]
