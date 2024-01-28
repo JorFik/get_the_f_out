@@ -1,7 +1,8 @@
 extends Node2D
 
 func _ready():
-	$"Riddles/Number RIddle".visible = false
+	#$"Riddles/Number RIddle".visible = false
+	pass
 
 func _on_door_body_entered(body):
 		if body.name == "red":

@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://b27mrsi4ko5yc"]
+[gd_scene load_steps=5 format=3 uid="uid://codawig105rpn"]
 
-[ext_resource type="Texture2D" uid="uid://ck3757s3vfk8a" path="res://Resources/haunted 2.jpg" id="1_mk5bs"]
+[ext_resource type="Texture2D" uid="uid://bdne3k1tbytk1" path="res://Resources/haunted 2.jpg" id="1_mk5bs"]
 [ext_resource type="Script" path="res://Scenes/first_cut_Scene.gd" id="2_v1hrn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xesrr"]

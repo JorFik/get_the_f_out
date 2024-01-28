@@ -7,7 +7,7 @@ const JUMP_VELOCITY = -300.0
 var	player_is_talking = false
 var is_on_floor = true
 const GRAVITY = 1.5
-const JUMP_STRENGTH = 20
+const JUMP_STRENGTH = 10
 var z_position = 0
 var z_velocity = 0
 
@@ -28,7 +28,7 @@ func get_input():
 		input.y = int(Input.is_action_pressed("down")) - int(Input.is_action_pressed("up"))
 	return input.normalized()
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	## Add the gravity.
 	if player_is_talking:
 		return

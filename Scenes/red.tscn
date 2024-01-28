@@ -1,7 +1,7 @@
 [gd_scene load_steps=26 format=3 uid="uid://rntxee5ikkkn"]
 
 [ext_resource type="Script" path="res://Scenes/red.gd" id="1_e406d"]
-[ext_resource type="Texture2D" uid="uid://bg7xh4xja306b" path="res://Resources/overworld_sprite_template_for_pokemon_games_by_cynthiacelestic-d8h0v36-1141318516.png" id="1_w2my3"]
+[ext_resource type="Texture2D" uid="uid://ct28l5rrsao47" path="res://Resources/overworld_sprite_template_for_pokemon_games_by_cynthiacelestic-d8h0v36-1141318516.png" id="1_w2my3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f4xir"]
 atlas = ExtResource("1_w2my3")
@@ -187,7 +187,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q6nvx"]
-size = Vector2(24, 40.5)
+size = Vector2(16, 14)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m18gq"]
 size = Vector2(30, 45)
@@ -202,11 +202,11 @@ script = ExtResource("1_e406d")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 unique_name_in_owner = true
 sprite_frames = SubResource("SpriteFrames_1ddq2")
-animation = &"idle_right"
-autoplay = "idle_up"
+animation = &"idle_down"
+autoplay = "idle_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 1.75)
+position = Vector2(0, 15)
 shape = SubResource("RectangleShape2D_q6nvx")
 
 [node name="Area2D_mainchar" type="Area2D" parent="."]
@@ -216,6 +216,6 @@ position = Vector2(1, 2.5)
 shape = SubResource("RectangleShape2D_m18gq")
 debug_color = Color(0.909804, 0, 0.729412, 0.419608)
 
-[connection signal="area_entered" from="Area2D_mainchar" to="." method="_on_area_2d_mainchar_area_area_entered"]
 [connection signal="area_entered" from="Area2D_mainchar" to="." method="_on_area_2d_mainchar_area_entered"]
+[connection signal="area_entered" from="Area2D_mainchar" to="." method="_on_area_2d_mainchar_area_area_entered"]
 [connection signal="area_exited" from="Area2D_mainchar" to="." method="_on_area_2d_mainchar_area_exited"]

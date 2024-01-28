@@ -29,6 +29,7 @@ directories/dch_directory={
 directories/dtl_directory={
 "Voice2": "res://texture/Voice2.dtl",
 "buttler_dialogue": "res://Resources/dialogues/buttler_dialogue.dtl",
+"oldman_after_riddle": "res://Resources/dialogues/oldman_after_riddle.dtl",
 "start_convo": "res://texture/start_convo.dtl",
 "timeline1": "res://Resources/dialogues/timeline1.dtl"
 }
@@ -55,7 +56,7 @@ variables={
 layout/style_list=["res://texture/New_File.tres"]
 layout/default_style="res://texture/New_File.tres"
 glossary/default_case_sensitive=true
-layout/end_behaviour=2
+layout/end_behaviour=1
 
 [display]
 
