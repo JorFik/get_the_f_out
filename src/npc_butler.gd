@@ -62,3 +62,4 @@ func _on_timeline_ended():
 	print("Timeline ended!")
 	Dialogic.timeline_ended.disconnect(_on_timeline_ended)
 	get_node("/root/Start/DialogueSceneButler").visible = false
+	$".".hide()

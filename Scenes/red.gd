@@ -7,7 +7,7 @@ const JUMP_VELOCITY = -300.0
 var	player_is_talking = false
 var is_on_floor = true
 const GRAVITY = 1.5
-const JUMP_STRENGTH = 10
+const JUMP_STRENGTH = 30
 var z_position = 0
 var z_velocity = 0
 
