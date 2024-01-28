@@ -5,7 +5,7 @@ const SPEED = 300.0
 const JUMP_VELOCITY = -300.0
 
 var	player_is_talking = false
-var in_floor = true
+var is_on_floor = true
 const GRAVITY = 1.5
 const JUMP_STRENGTH = 10
 var z_position = 0
@@ -43,7 +43,7 @@ func _physics_process(_delta):
 	if z_position <= 0:
 		z_position = 0
 		z_velocity = 0
-		in_floor = true
+		is_on_floor = true
 	else:
 		is_on_floor = false
 	var offset = Vector2(0, z_position)
