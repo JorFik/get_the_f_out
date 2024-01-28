@@ -53,7 +53,7 @@ func init_dial():
 		cur_dial.show()
 		return
 	elif (Dialogic.VAR.dial_stage == AFTER_SOLVED_FIRST_RIDDLE):
-		get_node("/root/Start/DialogueSceneButler").visible = true
+		get_node("/root/Start/DialogueSceneGeezer").visible = true
 		cur_dial = Dialogic.start("res://Resources/dialogues/oldman_after_riddle.dtl")
 		Dialogic.timeline_ended.connect(_on_timeline_ended)
 		cur_dial.show()
@@ -62,4 +62,4 @@ func _on_timeline_ended():
 	print("Timeline ended!")
 	Dialogic.timeline_ended.disconnect(_on_timeline_ended)
 	get_node("/root/Start/DialogueSceneButler").visible = false
-	$".".hide()
+	get_node("/root/Start/DialogueSceneGeezer").visible = false

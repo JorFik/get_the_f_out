@@ -1,8 +1,8 @@
 [gd_scene load_steps=11 format=3 uid="uid://cgucruso0mkqe"]
 
-[ext_resource type="Texture2D" uid="uid://d1rlciyqcwbxc" path="res://Scenes/Riddles/Number Riddle/stone_prev_no_background 2.png" id="1_2m5rl"]
+[ext_resource type="Texture2D" uid="uid://cpnax052qplka" path="res://Scenes/Riddles/Number Riddle/stone_prev_no_background 2.png" id="1_2m5rl"]
 [ext_resource type="Script" path="res://Scenes/Riddles/Number Riddle/sign.gd" id="2_w8ion"]
-[ext_resource type="FontFile" uid="uid://dwche4g0dhpti" path="res://Scenes/Riddles/Number Riddle/neuropol.otf" id="2_yklii"]
+[ext_resource type="FontFile" uid="uid://iota6ntf2ho5" path="res://Scenes/Riddles/Number Riddle/neuropol.otf" id="2_yklii"]
 [ext_resource type="PackedScene" uid="uid://bhhocxidfti4q" path="res://Scenes/Riddles/Number Riddle/input.tscn" id="3_j0jkp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vr57s"]
