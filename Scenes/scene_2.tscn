@@ -1,12 +1,12 @@
 [gd_scene load_steps=10 format=3 uid="uid://438u8chspn0q"]
 
 [ext_resource type="TileSet" uid="uid://dcmep1caywl56" path="res://src/upper_floor_right.tres" id="1_3ex55"]
-[ext_resource type="PackedScene" path="res://Scenes/couple_woman.tscn" id="2_db0jb"]
+[ext_resource type="PackedScene" uid="uid://dq6tqcpni0ysj" path="res://Scenes/couple_woman.tscn" id="2_db0jb"]
 [ext_resource type="PackedScene" uid="uid://n6ypwyksia5o" path="res://Scenes/couple_man.tscn" id="2_mixjk"]
 [ext_resource type="PackedScene" uid="uid://cj0vm4hm5cmw8" path="res://Scenes/butler.tscn" id="2_xg5m7"]
 [ext_resource type="PackedScene" uid="uid://rntxee5ikkkn" path="res://Scenes/red.tscn" id="3_6qaju"]
-[ext_resource type="PackedScene" path="res://Scenes/corpses.tscn" id="4_mutqg"]
-[ext_resource type="PackedScene" path="res://Scenes/briefcase_object.tscn" id="5_7dc0m"]
+[ext_resource type="PackedScene" uid="uid://cm2821wo5ct1m" path="res://Scenes/corpses.tscn" id="4_mutqg"]
+[ext_resource type="PackedScene" uid="uid://i2x18gqnmyfs" path="res://Scenes/briefcase_object.tscn" id="5_7dc0m"]
 [ext_resource type="PackedScene" uid="uid://bti36f1sd1te2" path="res://corpse_scene.tscn" id="8_ds406"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6foey"]

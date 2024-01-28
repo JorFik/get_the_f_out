@@ -17,10 +17,10 @@ func _on_dialogic_signal(argument:String):
 	if argument == "briefcase":
 		riddle2 = riddle2_scene.instantiate()
 		$"../Marker2D".add_child(riddle2)
-		riddle2.connect("_on_riddle_2_correct", _on_riddle_2_correct)
+		riddle2.connect("correct", _on_riddle2_correct)
 		get_node("/root/Scene2/CorpseScene").visible = false
 		
-func _on_riddle_2_correct():
+func _on_riddle2_correct():
 	print ("_ON_SIGN_CORRECT_IN_ANOTHER_NODE_AA")
 	riddle2.visible = false
 	riddle2.queue_free()
