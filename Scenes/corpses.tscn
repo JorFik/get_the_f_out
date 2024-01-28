@@ -1,0 +1,78 @@
+[gd_scene load_steps=10 format=3 uid="uid://cm2821wo5ct1m"]
+
+[ext_resource type="Texture2D" uid="uid://c7q68qyifxc7o" path="res://Resources/fossil/F2080-1.png" id="1_jbcyh"]
+[ext_resource type="Texture2D" uid="uid://cxoc1o3rju1w7" path="res://Resources/fossil/F2080-2.png" id="2_y7s1p"]
+[ext_resource type="Texture2D" uid="uid://dk7h81rtq3l0j" path="res://Resources/fossil/F2080-3.png" id="3_cf1gc"]
+[ext_resource type="Texture2D" uid="uid://ehllog0x5g0" path="res://Resources/fossil/F2080-4.png" id="4_58cyx"]
+[ext_resource type="Texture2D" uid="uid://c6835630ndt2y" path="res://Resources/fossil/F2080-5.png" id="5_rnagj"]
+[ext_resource type="Texture2D" uid="uid://dcr8jhekk40op" path="res://Resources/fossil/F2080-6.png" id="6_t5klc"]
+[ext_resource type="Texture2D" uid="uid://ocougkaxw3g3" path="res://Resources/fossil/F2080.png" id="7_p2233"]
+[ext_resource type="Texture2D" uid="uid://dpifoej0fubae" path="res://Resources/Skull 0011.png" id="8_46vdu"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qrynh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_jbcyh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_y7s1p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_cf1gc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_58cyx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_rnagj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_t5klc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_p2233")
+}],
+"loop": true,
+"name": &"flies",
+"speed": 5.0
+}]
+
+[node name="corpses" type="Node2D"]
+position = Vector2(1259, 634)
+scale = Vector2(0.25, 0.25)
+
+[node name="corpes object" type="StaticBody2D" parent="."]
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="corpes object"]
+position = Vector2(-400, -48)
+sprite_frames = SubResource("SpriteFrames_qrynh")
+animation = &"flies"
+autoplay = "flies"
+frame_progress = 0.417402
+flip_h = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="corpes object"]
+sprite_frames = SubResource("SpriteFrames_qrynh")
+animation = &"flies"
+frame_progress = 0.79256
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="corpes object"]
+polygon = PackedVector2Array(48, 80, 252, 180, 252, 264, -28, 244, -96, 272, -188, 272, -192, 212, -644, 192, -544, 80, -396, 12, -352, 64, -300, 48, -224, 40, -164, 80, -40, 92)
+
+[node name="skull1" type="TextureRect" parent="."]
+texture_filter = 1
+offset_left = -344.0
+offset_top = 28.0
+offset_right = -172.0
+offset_bottom = 212.0
+texture = ExtResource("8_46vdu")
+
+[node name="skull2" type="TextureRect" parent="."]
+texture_filter = 1
+offset_left = -204.0
+offset_top = 92.0
+offset_right = -16.0
+offset_bottom = 264.0
+texture = ExtResource("8_46vdu")
+flip_h = true
