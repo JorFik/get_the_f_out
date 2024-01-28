@@ -34,8 +34,8 @@ func _physics_process(_delta):
 		return
 	input = get_input()
 	if Input.is_action_just_pressed("jump") and is_on_floor == true:
-		z_velocity -= JUMP_STRENGTH
-	z_velocity += GRAVITY
+		z_velocity += JUMP_STRENGTH
+	z_velocity -= GRAVITY
 	z_position += z_velocity
 	if surface_height != 0 && z_position <= surface_height:
 		z_position = surface_height
@@ -46,7 +46,7 @@ func _physics_process(_delta):
 		is_on_floor = true
 	else:
 		is_on_floor = false
-	var offset = Vector2(0, z_position)
+	var offset = Vector2(0, -z_position)
 	$AnimatedSprite2D.position = offset
 	if z_position == surface_height:
 		is_on_floor = true
