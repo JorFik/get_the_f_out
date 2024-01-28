@@ -16,6 +16,8 @@ const OBSTACLE_MASK = 1
 const CHARACTER_LAYER = 2
 const CHARACTER_MASK = 2
 @onready var sprite_2d = %AnimatedSprite2D
+var surface_height = 0
+var colliding_surfaces = []
 
 var input = Vector2.ZERO
 
@@ -32,23 +34,28 @@ func _physics_process(delta):
 		return
 	input = get_input()
 	if Input.is_action_just_pressed("jump") and is_on_floor == true:
-		z_velocity -= JUMP_STRENGTH
-	z_velocity += GRAVITY
+		z_velocity += JUMP_STRENGTH
+	z_velocity -= GRAVITY
 	z_position += z_velocity
-	if z_position >= 0:
+	if surface_height != 0 && z_position <= surface_height:
+		z_position = surface_height
+		z_velocity = 0
+	if z_position <= 0:
 		z_position = 0
 		z_velocity = 0
 		is_on_floor = true
 	else:
 		is_on_floor = false
-	var offset = Vector2(0, z_position)
+	var offset = Vector2(0, -z_position)
 	$AnimatedSprite2D.position = offset
-	if is_on_floor:
-		collision_layer = OBSTACLE_LAYER
-		collision_mask = OBSTACLE_MASK
-	else:
+	if z_position == surface_height:
+		is_on_floor = true
+	if not is_on_floor or surface_height != 0:
 		collision_layer = CHARACTER_LAYER
 		collision_mask = CHARACTER_LAYER
+	else:
+		collision_layer = OBSTACLE_LAYER
+		collision_mask = OBSTACLE_MASK
 	# Handle jump.
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
@@ -81,6 +88,13 @@ func _physics_process(delta):
 	
 	move_and_slide()
 
+func calculate_max_height():
+	var max_height = 0
+	for surface in colliding_surfaces:
+		if surface.get_meta("Height") > max_height:
+			max_height = surface.get_meta("Height")
+	return max_height
+
 func _on_area_2d_mainchar_area_entered(area):
 	var overl_bodies = area.get_overlapping_bodies()
 	var	overl_body
@@ -91,7 +105,15 @@ func _on_area_2d_mainchar_area_entered(area):
 		player_is_talking = true
 		Dialogic.timeline_ended.connect(_on_timeline_ended)
 		overl_body.init_dial()
+	if area.is_in_group("surface"):
+		colliding_surfaces.append(area)
+		surface_height = calculate_max_height()
 
 func _on_timeline_ended():
 	Dialogic.timeline_ended.disconnect(_on_timeline_ended)
 	player_is_talking = false
+
+func _on_area_2d_mainchar_area_exited(area):
+	if area.is_in_group("surface"):
+		colliding_surfaces.erase(area)
+		surface_height = calculate_max_height()
