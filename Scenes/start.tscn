@@ -3,15 +3,15 @@
 [ext_resource type="Script" path="res://Scenes/start.gd" id="1_auot1"]
 [ext_resource type="PackedScene" uid="uid://rntxee5ikkkn" path="res://Scenes/red.tscn" id="1_rthnv"]
 [ext_resource type="PackedScene" uid="uid://bymftngoicm7l" path="res://Scenes/Riddles/Number Riddle/number_riddle.tscn" id="2_ipykl"]
-[ext_resource type="Texture2D" uid="uid://cnt6wuokgccns" path="res://Resources/haunted tileset.jpg" id="2_kab8f"]
-[ext_resource type="Texture2D" uid="uid://d2khpxim1t7y6" path="res://Resources/statue_left.png" id="3_byaso"]
-[ext_resource type="Texture2D" uid="uid://chuqyr85mllnc" path="res://Resources/statue_right.png" id="4_1g1hm"]
-[ext_resource type="PackedScene" uid="uid://bh43laytebyva" path="res://chararcters/sample_npc.tscn" id="4_hcql4"]
-[ext_resource type="PackedScene" path="res://Scenes/dialogue_scene.tscn" id="8_oo1sq"]
-[ext_resource type="PackedScene" path="res://Scenes/Obstacles/obstacle.tscn" id="9_emrcd"]
-[ext_resource type="PackedScene" uid="uid://ens4vbamlcqp" path="res://chararcters/npc_butler.tscn" id="9_t7ljs"]
-[ext_resource type="PackedScene" path="res://Scenes/Obstacles/surface.tscn" id="10_o7qyy"]
-[ext_resource type="PackedScene" path="res://Scenes/dialogue_butler_scene.tscn" id="10_rcbop"]
+[ext_resource type="Texture2D" uid="uid://154wjuvw728d" path="res://Resources/haunted tileset.jpg" id="2_kab8f"]
+[ext_resource type="Texture2D" uid="uid://bwvv7re7ohuph" path="res://Resources/statue_left.png" id="3_byaso"]
+[ext_resource type="Texture2D" uid="uid://hspumidwav5r" path="res://Resources/statue_right.png" id="4_1g1hm"]
+[ext_resource type="PackedScene" uid="uid://bh43laytebyva" path="res://chararcters/sample_npc 2.tscn" id="4_hcql4"]
+[ext_resource type="PackedScene" uid="uid://bq0kbgipiv6qa" path="res://Scenes/dialogue_scene.tscn" id="8_oo1sq"]
+[ext_resource type="PackedScene" uid="uid://csv2klmjhojfk" path="res://Scenes/Obstacles/obstacle.tscn" id="9_emrcd"]
+[ext_resource type="PackedScene" uid="uid://ens4vbamlcqp" path="res://chararcters/npc_butler 2.tscn" id="9_t7ljs"]
+[ext_resource type="PackedScene" uid="uid://ddsofs3sa7k83" path="res://Scenes/Obstacles/surface.tscn" id="10_o7qyy"]
+[ext_resource type="PackedScene" uid="uid://d14ly37cexh4k" path="res://Scenes/dialogue_butler_scene.tscn" id="10_rcbop"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_axql2"]
 texture = ExtResource("2_kab8f")
@@ -14881,6 +14881,14 @@ position = Vector2(-417, -392)
 position = Vector2(387, 132)
 scale = Vector2(5.16926, 4.86149)
 
+[node name="Obstacle3" parent="Walk on Table" instance=ExtResource("9_emrcd")]
+position = Vector2(618, 1156)
+scale = Vector2(1.25869, 1.24583)
+
+[node name="Obstacle4" parent="Walk on Table" instance=ExtResource("9_emrcd")]
+position = Vector2(1381, 1155)
+scale = Vector2(1.25869, 1.24583)
+
 [node name="Obstacle2" parent="Walk on Table" instance=ExtResource("9_emrcd")]
 position = Vector2(822, 423)
 scale = Vector2(1.39661, 2.47435)
@@ -14910,6 +14918,26 @@ metadata/Height = 15.0
 [node name="Surface4" parent="Walk on Table" instance=ExtResource("10_o7qyy")]
 position = Vector2(1380, 719)
 scale = Vector2(0.34595, 0.493129)
+metadata/Height = 15.0
+
+[node name="Surface5" parent="Walk on Table" instance=ExtResource("10_o7qyy")]
+position = Vector2(1308, 1338)
+scale = Vector2(0.336635, 1.02099)
+metadata/Height = 15.0
+
+[node name="Surface6" parent="Walk on Table" instance=ExtResource("10_o7qyy")]
+position = Vector2(1002, 1343)
+scale = Vector2(0.336635, 1.02099)
+metadata/Height = 15.0
+
+[node name="Surface7" parent="Walk on Table" instance=ExtResource("10_o7qyy")]
+position = Vector2(778, 1259)
+scale = Vector2(0.31793, 0.387241)
+metadata/Height = 15.0
+
+[node name="Surface8" parent="Walk on Table" instance=ExtResource("10_o7qyy")]
+position = Vector2(1536, 1266)
+scale = Vector2(0.31793, 0.387241)
 metadata/Height = 15.0
 
 [node name="npc_butler" parent="." instance=ExtResource("9_t7ljs")]
