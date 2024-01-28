@@ -1,13 +1,17 @@
-[gd_scene load_steps=6 format=3 uid="uid://cj0vm4hm5cmw8"]
+[gd_scene load_steps=7 format=3 uid="uid://cj0vm4hm5cmw8"]
 
+[ext_resource type="Texture2D" uid="uid://b48wxols3ghdj" path="res://Resources/ghost sprites.png" id="1_0sduv"]
 [ext_resource type="Script" path="res://Scenes/butler.gd" id="1_hsdh1"]
-[ext_resource type="Texture2D" uid="uid://b4vmd0ceyh36f" path="res://texture/butler-front.png" id="2_hlow0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5o6kj"]
+atlas = ExtResource("1_0sduv")
+region = Rect2(183, 88, 41, 82)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_epd43"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_hlow0")
+"texture": SubResource("AtlasTexture_5o6kj")
 }],
 "loop": true,
 "name": &"default",

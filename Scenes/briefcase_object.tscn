@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3 uid="uid://i2x18gqnmyfs"]
+
+[ext_resource type="Texture2D" uid="uid://b2pt8sj8iqjit" path="res://texture/16x16-texture/16x16-briefcase.png" id="1_gaas4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a66ed"]
+size = Vector2(256, 220)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qmqyu"]
+size = Vector2(100.193, 85.922)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cnsuq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_gaas4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="BriefcaseObject" type="StaticBody2D"]
+position = Vector2(1356, 532)
+scale = Vector2(0.25, 0.25)
+
+[node name="BriefcaseColision" type="CollisionShape2D" parent="."]
+position = Vector2(-4, 58)
+shape = SubResource("RectangleShape2D_a66ed")
+
+[node name="SampleNpcArea2D_npc" type="Area2D" parent="." groups=["npc_group"]]
+unique_name_in_owner = true
+position = Vector2(0.25, 0.5)
+
+[node name="CollisionShape2D_npc" type="CollisionShape2D" parent="SampleNpcArea2D_npc"]
+position = Vector2(-4.25, 55.5)
+scale = Vector2(3.2389, 2.88246)
+shape = SubResource("RectangleShape2D_qmqyu")
+debug_color = Color(0.933333, 0.101961, 0.588235, 0.419608)
+
+[node name="BriefcaseSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(20, 20)
+sprite_frames = SubResource("SpriteFrames_cnsuq")

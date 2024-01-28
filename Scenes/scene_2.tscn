@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bytyw8b8q4ur5"]
+[gd_scene load_steps=9 format=3 uid="uid://bytyw8b8q4ur5"]
 
 [ext_resource type="TileSet" uid="uid://ba4c5tap7i4rr" path="res://src/upper_floor_right.tres" id="1_3ex55"]
 [ext_resource type="PackedScene" uid="uid://dq6tqcpni0ysj" path="res://Scenes/couple_woman.tscn" id="2_db0jb"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cj0vm4hm5cmw8" path="res://Scenes/butler.tscn" id="2_xg5m7"]
 [ext_resource type="PackedScene" uid="uid://rntxee5ikkkn" path="res://Scenes/red.tscn" id="3_6qaju"]
 [ext_resource type="PackedScene" uid="uid://cm2821wo5ct1m" path="res://Scenes/corpses.tscn" id="4_mutqg"]
+[ext_resource type="PackedScene" uid="uid://i2x18gqnmyfs" path="res://Scenes/briefcase_object.tscn" id="5_7dc0m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6foey"]
 size = Vector2(69.75, 26)
@@ -29,6 +30,9 @@ position = Vector2(336, 1415)
 [node name="corpses" parent="." instance=ExtResource("4_mutqg")]
 position = Vector2(1356, 532)
 
+[node name="BriefcaseObject" parent="." instance=ExtResource("5_7dc0m")]
+position = Vector2(1069, 614)
+
 [node name="Door" type="Area2D" parent="."]
 visible = false
 position = Vector2(972, 1726)
@@ -40,7 +44,7 @@ shape = SubResource("RectangleShape2D_6foey")
 
 [node name="butler" parent="." instance=ExtResource("2_xg5m7")]
 texture_filter = 1
-position = Vector2(1124, 514)
+position = Vector2(1134, 496)
 scale = Vector2(5, 5)
 
 [node name="red" parent="." instance=ExtResource("3_6qaju")]

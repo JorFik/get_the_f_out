@@ -55,6 +55,7 @@ flip_h = true
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="corpes object"]
 sprite_frames = SubResource("SpriteFrames_qrynh")
 animation = &"flies"
+autoplay = "flies"
 frame_progress = 0.79256
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="corpes object"]
