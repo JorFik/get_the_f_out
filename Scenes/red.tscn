@@ -1,7 +1,7 @@
 [gd_scene load_steps=26 format=3 uid="uid://rntxee5ikkkn"]
 
 [ext_resource type="Script" path="res://Scenes/red.gd" id="1_e406d"]
-[ext_resource type="Texture2D" uid="uid://ct28l5rrsao47" path="res://Resources/overworld_sprite_template_for_pokemon_games_by_cynthiacelestic-d8h0v36-1141318516.png" id="1_w2my3"]
+[ext_resource type="Texture2D" uid="uid://bg7xh4xja306b" path="res://Resources/overworld_sprite_template_for_pokemon_games_by_cynthiacelestic-d8h0v36-1141318516.png" id="1_w2my3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f4xir"]
 atlas = ExtResource("1_w2my3")
