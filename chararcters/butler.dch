@@ -1,0 +1,155 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(0.607843, 0.0588235, 0.0588235, 1),
+"custom_info": {
+"sound_mood_default": "",
+"sound_moods": {},
+"style": ""
+},
+"default_portrait": "butler-front",
+"description": "",
+"display_name": "Butler",
+"mirror": false,
+"nicknames": [""],
+"offset": Vector2(0, 0),
+"portraits": {
+"Stuhl": {
+"export_overrides": {
+"image": "\"res://texture/Stuhl.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Stuhl_2": {
+"export_overrides": {
+"image": "\"res://texture/Stuhl_2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"butler-front": {
+"export_overrides": {
+"image": "\"res://texture/butler-front.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"cello": {
+"export_overrides": {
+"image": "\"res://texture/cello.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"door1": {
+"export_overrides": {
+"image": "\"res://texture/door1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"fireplace": {
+"export_overrides": {
+"image": "\"res://texture/fireplace.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"floor1": {
+"export_overrides": {
+"image": "\"res://texture/floor1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"man": {
+"export_overrides": {
+"image": "\"res://texture/man.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"old man": {
+"export_overrides": {
+"image": "\"res://texture/old man.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"schrank": {
+"export_overrides": {
+"image": "\"res://texture/schrank.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sidewall": {
+"export_overrides": {
+"image": "\"res://texture/sidewall.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"wall1": {
+"export_overrides": {
+"image": "\"res://texture/wall1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"wall2": {
+"export_overrides": {
+"image": "\"res://texture/wall2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"wall3": {
+"export_overrides": {
+"image": "\"res://texture/wall3.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"woman": {
+"export_overrides": {
+"image": "\"res://texture/woman.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+"scale": 1.0
+}
