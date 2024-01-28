@@ -21,10 +21,16 @@ Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
 
 [dialogic]
 
-directories/dch_directory={}
+directories/dch_directory={
+"?": "res://texture/?.dch",
+"Voice2": "res://texture/Voice2.dch",
+"butler": "res://chararcters/butler.dch"
+}
 directories/dtl_directory={
+"Voice2": "res://texture/Voice2.dtl",
 "buttler_dialogue": "res://Resources/dialogues/buttler_dialogue.dtl",
 "oldman_after_riddle": "res://Resources/dialogues/oldman_after_riddle.dtl",
+"start_convo": "res://texture/start_convo.dtl",
 "timeline1": "res://Resources/dialogues/timeline1.dtl"
 }
 text/letter_speed=0.01
@@ -47,8 +53,8 @@ variables={
 "NewVariable": "228",
 "first_time": "1"
 }
-layout/style_list=[]
-layout/default_style="Default"
+layout/style_list=["res://texture/New_File.tres"]
+layout/default_style="res://texture/New_File.tres"
 glossary/default_case_sensitive=true
 layout/end_behaviour=1
 

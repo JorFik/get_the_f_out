@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://by7mner3anen5"]
+[gd_scene load_steps=3 format=3 uid="uid://de5rprmrurx8j"]
 
 [ext_resource type="Script" path="res://Scenes/intro_cut_scene.gd" id="1_c0e7v"]
-[ext_resource type="FontFile" uid="uid://bvehkghp7x5o3" path="res://Resources/burtons_nightmare/NITEMARE.TTF" id="1_tff7t"]
+[ext_resource type="FontFile" uid="uid://bxyb1tkic3h5x" path="res://Resources/burtons_nightmare/NITEMARE.TTF" id="1_tff7t"]
 
 [node name="IntroCutScene" type="Node"]
 script = ExtResource("1_c0e7v")
@@ -29,9 +29,9 @@ text = "You are visiting an abandoned mansion. You found out about it in an unde
 You found the place and enter. As soon as you are in, the worst storm you ever saw starts. You decide to stay the night."
 
 [node name="CharacterTimer" type="Timer" parent="."]
-wait_time = 0.05
+wait_time = 0.01
 autostart = true
 
 [node name="EndTimer" type="Timer" parent="."]
-wait_time = 3.0
+wait_time = 2.0
 one_shot = true
