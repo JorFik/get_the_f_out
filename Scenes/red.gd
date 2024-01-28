@@ -5,9 +5,9 @@ const SPEED = 300.0
 const JUMP_VELOCITY = -300.0
 
 var	player_is_talking = false
-var is_on_floor = true
+var in_floor = true
 const GRAVITY = 1.5
-const JUMP_STRENGTH = 20
+const JUMP_STRENGTH = 10
 var z_position = 0
 var z_velocity = 0
 
@@ -26,24 +26,24 @@ func get_input():
 		input.y = int(Input.is_action_pressed("down")) - int(Input.is_action_pressed("up"))
 	return input.normalized()
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	## Add the gravity.
 	if player_is_talking:
 		return
 	input = get_input()
-	if Input.is_action_just_pressed("jump") and is_on_floor == true:
+	if Input.is_action_just_pressed("jump") and in_floor == true:
 		z_velocity -= JUMP_STRENGTH
 	z_velocity += GRAVITY
 	z_position += z_velocity
 	if z_position >= 0:
 		z_position = 0
 		z_velocity = 0
-		is_on_floor = true
+		in_floor = true
 	else:
-		is_on_floor = false
+		in_floor = false
 	var offset = Vector2(0, z_position)
 	$AnimatedSprite2D.position = offset
-	if is_on_floor:
+	if in_floor:
 		collision_layer = OBSTACLE_LAYER
 		collision_mask = OBSTACLE_MASK
 	else:

@@ -187,7 +187,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q6nvx"]
-size = Vector2(24, 40.5)
+size = Vector2(16, 14)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 texture_filter = 1
@@ -199,9 +199,9 @@ script = ExtResource("1_e406d")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 unique_name_in_owner = true
 sprite_frames = SubResource("SpriteFrames_1ddq2")
-animation = &"idle_right"
-autoplay = "idle_up"
+animation = &"idle_down"
+autoplay = "idle_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 1.75)
+position = Vector2(0, 15)
 shape = SubResource("RectangleShape2D_q6nvx")
