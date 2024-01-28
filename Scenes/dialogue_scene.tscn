@@ -1,24 +1,30 @@
-[gd_scene load_steps=4 format=3 uid="uid://bq0kbgipiv6qa"]
+[gd_scene load_steps=5 format=3 uid="uid://bq0kbgipiv6qa"]
 
-[ext_resource type="Texture2D" uid="uid://6wpowqw0v3b0" path="res://texture/wall1.png" id="1_otghy"]
-[ext_resource type="Texture2D" uid="uid://bu371ko6jl0i4" path="res://texture/old man.png" id="3_4wr3e"]
-[ext_resource type="Texture2D" uid="uid://c3gcxouks1h5x" path="res://texture/schrank.png" id="4_rlwdw"]
+[ext_resource type="Texture2D" uid="uid://b4ef5x0im8pn5" path="res://texture/wall1.png" id="1_otghy"]
+[ext_resource type="Texture2D" uid="uid://bhonbgbeid02x" path="res://texture/old man.png" id="3_4wr3e"]
+[ext_resource type="Texture2D" uid="uid://b4vmd0ceyh36f" path="res://texture/butler-front.png" id="4_lx23g"]
+[ext_resource type="Texture2D" uid="uid://bpwe8xy513sf5" path="res://texture/schrank.png" id="4_rlwdw"]
 
 [node name="DialogueScene2" type="Node2D"]
 z_index = 50
 position = Vector2(9, 9)
 
 [node name="Wall1" type="Sprite2D" parent="."]
-position = Vector2(1579.37, 893.826)
-scale = Vector2(49.3946, 28.0024)
+position = Vector2(1191.37, 885.875)
+scale = Vector2(37.2696, 27.7539)
 texture = ExtResource("1_otghy")
 
 [node name="OldMan" type="Sprite2D" parent="."]
-position = Vector2(660, 1764)
-scale = Vector2(47.6406, 47.6406)
+position = Vector2(318.875, 890.875)
+scale = Vector2(26.6601, 28.0351)
 texture = ExtResource("3_4wr3e")
 
 [node name="Schrank" type="Sprite2D" parent="."]
-position = Vector2(1817, 759.333)
+position = Vector2(1549, 727)
 scale = Vector2(22.6333, 22.6333)
 texture = ExtResource("4_rlwdw")
+
+[node name="Butler-front" type="Sprite2D" parent="."]
+position = Vector2(1993, 910)
+scale = Vector2(22.8789, 27.6875)
+texture = ExtResource("4_lx23g")
