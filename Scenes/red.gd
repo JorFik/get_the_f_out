@@ -21,6 +21,14 @@ var colliding_surfaces = []
 
 var input = Vector2.ZERO
 
+func _ready():
+	#print (SpawnManager.next_spawn_location)
+	var spawn_node = self.get_parent().get_node(SpawnManager.spawn_name);
+	if not spawn_node:
+		return
+	self.global_position = spawn_node.position
+
+
 func get_input():
 	if input.y == 0:
 		input.x = int(Input.is_action_pressed("right")) - int(Input.is_action_pressed("left"))
