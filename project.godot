@@ -22,7 +22,12 @@ Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
+"Dumber By The Second": "res://Dumber By The Second.dch",
+"Karla": "res://Karla.dch",
 "Mortymare Rickson": "res://Mortymare Rickson.dch",
+"My Thoughts": "res://My Thoughts.dch",
+"Stupidity the Character": "res://Stupidity the Character.dch",
+"The Greatest Idiot": "res://The Greatest Idiot.dch",
 "Voice2": "res://texture/Voice2.dch",
 "butler": "res://chararcters/butler.dch",
 "question_mark": "res://texture/question_mark.dch"
@@ -31,6 +36,7 @@ directories/dtl_directory={
 "Voice2": "res://texture/Voice2.dtl",
 "buttler_dialogue": "res://Resources/dialogues/buttler_dialogue.dtl",
 "corpse": "res://corpse.dtl",
+"corpse_after": "res://corpse_after.dtl",
 "oldman_after_riddle": "res://Resources/dialogues/oldman_after_riddle.dtl",
 "start_convo": "res://texture/start_convo.dtl",
 "timeline1": "res://Resources/dialogues/timeline1.dtl"

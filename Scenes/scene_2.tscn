@@ -55,3 +55,6 @@ scale = Vector2(2, 2)
 [node name="CorpseScene" parent="." instance=ExtResource("8_ds406")]
 visible = false
 position = Vector2(-5, -13)
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(269, 661)

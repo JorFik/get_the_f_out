@@ -89,7 +89,7 @@ position = Vector2(452, 951)
 scale = Vector2(27.625, 25.375)
 texture = ExtResource("2_asro4")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Klara" type="Sprite2D" parent="."]
 position = Vector2(838, 1123)
 scale = Vector2(20.7188, 21.25)
 texture = ExtResource("3_uvwbs")

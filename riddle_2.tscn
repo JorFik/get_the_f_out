@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://jpt1ypg052nq"]
+
+[ext_resource type="Script" path="res://Riddle2.gd" id="1_amd1l"]
+[ext_resource type="PackedScene" uid="uid://cgucruso0mkqe" path="res://Scenes/Riddles/Number Riddle/sign.tscn" id="2_s1y05"]
+
+[node name="Riddle2" type="Node2D"]
+script = ExtResource("1_amd1l")
+
+[node name="Sign" parent="." instance=ExtResource("2_s1y05")]
+position = Vector2(164, 131)
+
+[connection signal="correct" from="Sign" to="." method="_on_sign_correct"]
