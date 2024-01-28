@@ -1,11 +1,11 @@
-[gd_scene load_steps=17 format=3 uid="uid://cjgmor642bipd"]
+[gd_scene load_steps=18 format=3 uid="uid://cjgmor642bipd"]
 
 [ext_resource type="Script" path="res://Scenes/start.gd" id="1_auot1"]
 [ext_resource type="PackedScene" uid="uid://rntxee5ikkkn" path="res://Scenes/red.tscn" id="1_rthnv"]
 [ext_resource type="TileSet" uid="uid://biidopqd44mm4" path="res://texture/start.tres" id="2_1r3w4"]
-[ext_resource type="Texture2D" uid="uid://b8oh4coogyop8" path="res://Resources/haunted tileset.jpg" id="2_kab8f"]
-[ext_resource type="Texture2D" uid="uid://dvehll1le44bw" path="res://Resources/statue_left.png" id="3_byaso"]
-[ext_resource type="Texture2D" uid="uid://632nje2ajoep" path="res://Resources/statue_right.png" id="4_1g1hm"]
+[ext_resource type="Texture2D" uid="uid://b0c152a1wi41c" path="res://Resources/haunted tileset.jpg" id="2_kab8f"]
+[ext_resource type="Texture2D" uid="uid://1sls7vjlbw82" path="res://Resources/statue_left.png" id="3_byaso"]
+[ext_resource type="Texture2D" uid="uid://cl6xw5cwyirio" path="res://Resources/statue_right.png" id="4_1g1hm"]
 [ext_resource type="PackedScene" uid="uid://bq0kbgipiv6qa" path="res://Scenes/dialogue_scene.tscn" id="8_oo1sq"]
 [ext_resource type="PackedScene" uid="uid://csv2klmjhojfk" path="res://Scenes/Obstacles/obstacle.tscn" id="9_emrcd"]
 [ext_resource type="PackedScene" uid="uid://ens4vbamlcqp" path="res://chararcters/npc_butler.tscn" id="9_t7ljs"]
@@ -7424,6 +7424,7 @@ script = ExtResource("1_auot1")
 
 [node name="DefaultSpawn" type="Marker2D" parent="."]
 position = Vector2(1189, 1478)
+
 [node name="main map" type="TileMap" parent="."]
 texture_filter = 5
 scale = Vector2(3, 3)
@@ -7440,7 +7441,7 @@ position = Vector2(1708, 640)
 [node name="SpawnManager" type="Node" parent="."]
 script = ExtResource("11_4mwol")
 
-[node name="main map" type="TileMap" parent="."]
+[node name="main map2" type="TileMap" parent="."]
 texture_filter = 5
 scale = Vector2(3, 3)
 tile_set = ExtResource("2_1r3w4")
@@ -7590,3 +7591,4 @@ position = Vector2(553, 1193)
 
 [connection signal="body_entered" from="Door" to="." method="_on_door_body_entered"]
 [connection signal="body_entered" from="Door2" to="." method="_on_door2_body_entered"]
+[connection signal="blue" from="npc_butler" to="red" method="_on_npc_butler_blue"]

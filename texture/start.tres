@@ -1,8 +1,8 @@
 [gd_resource type="TileSet" load_steps=7 format=3 uid="uid://biidopqd44mm4"]
 
-[ext_resource type="Texture2D" uid="uid://b8oh4coogyop8" path="res://Resources/haunted tileset.jpg" id="1_qm8ef"]
-[ext_resource type="Texture2D" uid="uid://dvehll1le44bw" path="res://Resources/statue_left.png" id="2_ccftb"]
-[ext_resource type="Texture2D" uid="uid://632nje2ajoep" path="res://Resources/statue_right.png" id="3_rellt"]
+[ext_resource type="Texture2D" uid="uid://b0c152a1wi41c" path="res://Resources/haunted tileset.jpg" id="1_qm8ef"]
+[ext_resource type="Texture2D" uid="uid://1sls7vjlbw82" path="res://Resources/statue_left.png" id="2_ccftb"]
+[ext_resource type="Texture2D" uid="uid://cl6xw5cwyirio" path="res://Resources/statue_right.png" id="3_rellt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_axql2"]
 texture = ExtResource("1_qm8ef")

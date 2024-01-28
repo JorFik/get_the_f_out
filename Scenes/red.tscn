@@ -1,7 +1,15 @@
-[gd_scene load_steps=26 format=3 uid="uid://rntxee5ikkkn"]
+[gd_scene load_steps=34 format=3 uid="uid://rntxee5ikkkn"]
 
 [ext_resource type="Script" path="res://Scenes/red.gd" id="1_e406d"]
-[ext_resource type="Texture2D" uid="uid://d1plj5p6rouau" path="res://Resources/overworld_sprite_template_for_pokemon_games_by_cynthiacelestic-d8h0v36-1141318516.png" id="1_w2my3"]
+[ext_resource type="Texture2D" uid="uid://b4rjsl6k6ptu3" path="res://Resources/overworld_sprite_template_for_pokemon_games_by_cynthiacelestic-d8h0v36-1141318516.png" id="1_w2my3"]
+[ext_resource type="Texture2D" uid="uid://k5pd7of2f3mg" path="res://texture/red-player/red-front.png" id="3_wu7gh"]
+[ext_resource type="Texture2D" uid="uid://bqi6ur237284c" path="res://texture/red-player/red-runleftleg.png" id="4_oo2wu"]
+[ext_resource type="Texture2D" uid="uid://crvmtpwgewq8d" path="res://texture/red-player/red-runrightleg.png" id="5_g5837"]
+[ext_resource type="Texture2D" uid="uid://bsop0cv48beq8" path="res://texture/red-player/red-sidetoleft.png" id="6_wif3e"]
+[ext_resource type="Texture2D" uid="uid://68xbbdtawcyc" path="res://texture/red-player/red-sidetoright.png" id="7_8t4jc"]
+[ext_resource type="Texture2D" uid="uid://ck204wrrjft84" path="res://texture/red-player/red-back.png" id="8_twxuv"]
+[ext_resource type="Texture2D" uid="uid://c46v8leq0uoxd" path="res://texture/red-player/red-backleftleg.png" id="9_2di4o"]
+[ext_resource type="Texture2D" uid="uid://doygjecydbeeu" path="res://texture/red-player/red-backrightleg.png" id="10_4v4cw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f4xir"]
 atlas = ExtResource("1_w2my3")
@@ -104,10 +112,35 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("3_wu7gh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_oo2wu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wu7gh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_g5837")
+}],
+"loop": true,
+"name": &"down_blue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_w7pxk")
 }],
 "loop": true,
 "name": &"idle_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_wu7gh")
+}],
+"loop": true,
+"name": &"idle_down_blue",
 "speed": 5.0
 }, {
 "frames": [{
@@ -120,6 +153,14 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("6_wif3e")
+}],
+"loop": true,
+"name": &"idle_left_blue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_scwt2")
 }],
 "loop": true,
@@ -128,10 +169,26 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("7_8t4jc")
+}],
+"loop": true,
+"name": &"idle_right_blue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_he4el")
 }],
 "loop": true,
 "name": &"idle_up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_twxuv")
+}],
+"loop": true,
+"name": &"idle_up_blue",
 "speed": 5.0
 }, {
 "frames": [{
@@ -153,6 +210,14 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("6_wif3e")
+}],
+"loop": true,
+"name": &"left_blue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_brdwo")
 }, {
 "duration": 1.0,
@@ -166,6 +231,14 @@ animations = [{
 }],
 "loop": true,
 "name": &"right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_8t4jc")
+}],
+"loop": true,
+"name": &"right_blue",
 "speed": 5.0
 }, {
 "frames": [{
@@ -184,6 +257,23 @@ animations = [{
 "loop": true,
 "name": &"up",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_twxuv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_2di4o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_twxuv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_4v4cw")
+}],
+"loop": true,
+"name": &"up_blue",
+"speed": 7.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q6nvx"]
@@ -201,8 +291,9 @@ script = ExtResource("1_e406d")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 unique_name_in_owner = true
+texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_1ddq2")
-animation = &"idle_down"
+animation = &"left_blue"
 autoplay = "idle_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

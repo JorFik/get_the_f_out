@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+signal blue
+
 const FIRST_DIAL = 1
 const SOLVING_FIRST_RIDDLE = 2
 const AFTER_SOLVED_FIRST_RIDDLE = 3
@@ -24,6 +26,8 @@ func _on_dialogic_signal(argument:String):
 		riddle1.connect("riddle_correct", _on_riddle_correct)
 		#riddle1.position = Vector2(-500, -500)
 		get_node("/root/Start/DialogueSceneButler").visible = false
+	if argument == "orange":
+		blue.emit()
 
 func _on_riddle_correct():
 	print ("abyrwalg wtf_ON_RIDDLE_CORRECT_IN_ANOTHER_NODE_AA")

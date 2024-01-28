@@ -18,6 +18,7 @@ const CHARACTER_MASK = 2
 @onready var sprite_2d = %AnimatedSprite2D
 var surface_height = 0
 var colliding_surfaces = []
+var blue = 0
 
 var input = Vector2.ZERO
 
@@ -28,6 +29,9 @@ func _ready():
 		return
 	self.global_position = spawn_node.position
 
+func _on_npc_butler_blue():
+	blue = 1
+	sprite_2d.animation = "idle_down_blue"
 
 func get_input():
 	if input.y == 0:
@@ -77,22 +81,45 @@ func _physics_process(_delta):
 		velocity.y = directiony * SPEED
 	else:
 		velocity.y = move_toward(velocity.x, 0, SPEED)
-	if input.x > 0:
+	#	Right Direction
+	if input.x > 0 && !blue:
 		sprite_2d.animation = "right"
-	elif Input.is_action_just_released("right"):
+	elif Input.is_action_just_released("right") && !blue:
 		sprite_2d.animation = "idle_right"
-	if input.x < 0:
+	if input.x > 0 && blue:
+		sprite_2d.animation = "right_blue"
+	elif Input.is_action_just_released("right") && blue:
+		sprite_2d.animation = "idle_right_blue"
+		
+	#	Left
+	if input.x < 0 && !blue:
 		sprite_2d.animation = "left"
-	elif Input.is_action_just_released("left"):
+	elif Input.is_action_just_released("left") && !blue:
 		sprite_2d.animation = "idle_left"
-	if input.y < 0:
+	if input.x < 0 && blue:
+		sprite_2d.animation = "left_blue"
+	elif Input.is_action_just_released("left") && blue:
+		sprite_2d.animation = "idle_left_blue"
+	
+	#	Up
+	if input.y < 0 && !blue:
 		sprite_2d.animation = "up"
-	elif Input.is_action_just_released("up"):
+	elif Input.is_action_just_released("up") && !blue:
 		sprite_2d.animation = "idle_up"
-	if input.y > 0:
+	if input.y < 0 && blue:
+		sprite_2d.animation = "up_blue"
+	elif Input.is_action_just_released("up") && blue:
+		sprite_2d.animation = "idle_up_blue"
+		
+	 #	Down
+	if input.y > 0 && !blue:
 		sprite_2d.animation = "down"
-	elif Input.is_action_just_released("down"):
+	elif Input.is_action_just_released("down") && !blue:
 		sprite_2d.animation = "idle_down"
+	if input.y > 0 && blue:
+		sprite_2d.animation = "down_blue"
+	elif Input.is_action_just_released("down") && blue:
+		sprite_2d.animation = "idle_down_blue"
 	
 	move_and_slide()
 
@@ -127,3 +154,5 @@ func _on_area_2d_mainchar_area_exited(area):
 	if area.is_in_group("surface"):
 		colliding_surfaces.erase(area)
 		surface_height = calculate_max_height()
+
+
