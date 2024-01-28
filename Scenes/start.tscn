@@ -1,16 +1,15 @@
-[gd_scene load_steps=21 format=3 uid="uid://cjgmor642bipd"]
+[gd_scene load_steps=20 format=3 uid="uid://cjgmor642bipd"]
 
 [ext_resource type="Script" path="res://Scenes/start.gd" id="1_auot1"]
 [ext_resource type="PackedScene" uid="uid://rntxee5ikkkn" path="res://Scenes/red.tscn" id="1_rthnv"]
-[ext_resource type="PackedScene" uid="uid://bymftngoicm7l" path="res://Scenes/Riddles/Number Riddle/number_riddle.tscn" id="2_ipykl"]
-[ext_resource type="Texture2D" uid="uid://dipf1o87did1x" path="res://Resources/haunted tileset.jpg" id="2_kab8f"]
-[ext_resource type="Texture2D" uid="uid://bx2s5qb22sey1" path="res://Resources/statue_left.png" id="3_byaso"]
-[ext_resource type="Texture2D" uid="uid://m74m05yvgie7" path="res://Resources/statue_right.png" id="4_1g1hm"]
+[ext_resource type="Texture2D" uid="uid://d1geae7070v0x" path="res://Resources/haunted tileset.jpg" id="2_kab8f"]
+[ext_resource type="Texture2D" uid="uid://cclfwrswj6hma" path="res://Resources/statue_left.png" id="3_byaso"]
+[ext_resource type="Texture2D" uid="uid://ddri2x16wwl58" path="res://Resources/statue_right.png" id="4_1g1hm"]
 [ext_resource type="PackedScene" uid="uid://bq0kbgipiv6qa" path="res://Scenes/dialogue_scene.tscn" id="8_oo1sq"]
-[ext_resource type="PackedScene" path="res://Scenes/Obstacles/obstacle.tscn" id="9_emrcd"]
-[ext_resource type="PackedScene" uid="uid://bxh1ons50l14t" path="res://chararcters/npc_butler.tscn" id="9_t7ljs"]
-[ext_resource type="PackedScene" path="res://Scenes/Obstacles/surface.tscn" id="10_o7qyy"]
-[ext_resource type="PackedScene" path="res://Scenes/dialogue_butler_scene.tscn" id="10_rcbop"]
+[ext_resource type="PackedScene" uid="uid://csv2klmjhojfk" path="res://Scenes/Obstacles/obstacle.tscn" id="9_emrcd"]
+[ext_resource type="PackedScene" uid="uid://ens4vbamlcqp" path="res://chararcters/npc_butler.tscn" id="9_t7ljs"]
+[ext_resource type="PackedScene" uid="uid://ddsofs3sa7k83" path="res://Scenes/Obstacles/surface.tscn" id="10_o7qyy"]
+[ext_resource type="PackedScene" uid="uid://d14ly37cexh4k" path="res://Scenes/dialogue_butler_scene.tscn" id="10_rcbop"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_axql2"]
 texture = ExtResource("2_kab8f")
@@ -14770,13 +14769,6 @@ position = Vector2(995, -768)
 position = Vector2(-298, 1192)
 shape = SubResource("RectangleShape2D_stmol")
 
-[node name="Riddles" type="Node2D" parent="."]
-position = Vector2(975, 801)
-
-[node name="Number RIddle" parent="Riddles" instance=ExtResource("2_ipykl")]
-visible = false
-position = Vector2(-417, -392)
-
 [node name="Walk on Table" type="Node2D" parent="."]
 
 [node name="Obstacle" parent="Walk on Table" instance=ExtResource("9_emrcd")]
@@ -14881,6 +14873,9 @@ metadata/Height = 15.0
 [node name="npc_butler" parent="." instance=ExtResource("9_t7ljs")]
 position = Vector2(1191, 1347)
 scale = Vector2(3, 3)
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(553, 1193)
 
 [connection signal="body_entered" from="Door" to="." method="_on_door_body_entered"]
 [connection signal="body_entered" from="Door2" to="." method="_on_door2_body_entered"]

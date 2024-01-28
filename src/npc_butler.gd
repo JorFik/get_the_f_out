@@ -19,7 +19,7 @@ func _on_dialogic_signal(argument:String):
 	if argument == "riddle1":
 		print("dialogic signal riddle1 recieved by butler")
 		riddle1 = riddle1_scene.instantiate()
-		add_child(riddle1)
+		$"../Marker2D".add_child(riddle1)
 		riddle1.connect("riddle_correct", _on_riddle_correct)
 		#riddle1.position = Vector2(-500, -500)
 		get_node("/root/Start/DialogueSceneButler").visible = false
