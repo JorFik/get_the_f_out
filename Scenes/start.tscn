@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://cjgmor642bipd"]
+[gd_scene load_steps=18 format=3 uid="uid://cjgmor642bipd"]
 
 [ext_resource type="Script" path="res://Scenes/start.gd" id="1_auot1"]
 [ext_resource type="PackedScene" uid="uid://rntxee5ikkkn" path="res://Scenes/red.tscn" id="1_rthnv"]
@@ -7424,6 +7424,7 @@ script = ExtResource("1_auot1")
 
 [node name="DefaultSpawn" type="Marker2D" parent="."]
 position = Vector2(1189, 1478)
+
 [node name="main map" type="TileMap" parent="."]
 texture_filter = 5
 scale = Vector2(3, 3)
@@ -7440,7 +7441,7 @@ position = Vector2(1708, 640)
 [node name="SpawnManager" type="Node" parent="."]
 script = ExtResource("11_4mwol")
 
-[node name="main map" type="TileMap" parent="."]
+[node name="main map2" type="TileMap" parent="."]
 texture_filter = 5
 scale = Vector2(3, 3)
 tile_set = ExtResource("2_1r3w4")

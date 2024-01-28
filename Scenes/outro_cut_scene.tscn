@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://6trhugflxatc"]
+
+[ext_resource type="Script" path="res://Scenes/outro_cut_scene.gd" id="1_expym"]
+[ext_resource type="FontFile" uid="uid://0gwhqdy8kdbw" path="res://Resources/burtons_nightmare/NITEMARE.TTF" id="2_h1s3e"]
+
+[node name="OutroCutScene" type="Node"]
+script = ExtResource("1_expym")
+
+[node name="BG" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Text" type="RichTextLabel" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 50.0
+offset_top = -1747.0
+offset_right = -45.0
+offset_bottom = -65.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/normal_font = ExtResource("2_h1s3e")
+theme_override_font_sizes/normal_font_size = 80
+text = "\"Bravo, intrepid soul! The haunted mansion now stands liberated, its once-ghostly inhabitants released into the afterlife. As you stroll towards the exit, a sense of accomplishment fills your heart, knowing you've conquered the supernatural challenges within.
+
+
+You feel accomplished and at the same time a little humiliated. Now it's finally your turn to Get the F**k out of here. Thanks for playing\""
+
+[node name="CharacterTimer" type="Timer" parent="."]
+wait_time = 0.01
+autostart = true
+
+[node name="EndTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true

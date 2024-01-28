@@ -27,4 +27,6 @@ func _on_timeline_ended():
 	Dialogic.timeline_ended.disconnect(_on_timeline_ended)
 	get_node("/root/EndScene/DialogueSceneFinal").visible = false
 	get_node("/root/EndScene/DialogueSceneFinalButOnly").visible = false
+	get_tree().change_scene_to_file("res://Scenes/outro_cut_scene.tscn")
+	
 	#Dialogue ends, insert change of scene or something here

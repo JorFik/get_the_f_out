@@ -14,5 +14,6 @@ func _ready():
 	#if Input.is_physical_key_pressed("KEY_ESCAPE") or Input.is_physical_key_pressed("KEY_Q")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+func _process(_delta):
+	if Input.is_physical_key_pressed(KEY_ESCAPE) or Input.is_physical_key_pressed(KEY_Q):
+		get_tree().quit()
