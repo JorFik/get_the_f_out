@@ -29,9 +29,9 @@ text = "You are visiting an abandoned mansion. You found out about it in an unde
 You found the place and enter. As soon as you are in, the worst storm you ever saw starts. You decide to stay the night."
 
 [node name="CharacterTimer" type="Timer" parent="."]
-wait_time = 0.05
+wait_time = 0.01
 autostart = true
 
 [node name="EndTimer" type="Timer" parent="."]
-wait_time = 3.0
+wait_time = 2.0
 one_shot = true
