@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://dcpxv4c1kotek"]
 
 [ext_resource type="Script" path="res://Scenes/upper_floor.gd" id="1_4ju4s"]
-[ext_resource type="Texture2D" uid="uid://bc64vnusti7cp" path="res://Resources/haunted  6.jpg" id="1_b37b3"]
+[ext_resource type="Texture2D" uid="uid://bqtde62273wje" path="res://Resources/haunted  6.jpg" id="1_b37b3"]
 [ext_resource type="PackedScene" uid="uid://rntxee5ikkkn" path="res://Scenes/red.tscn" id="2_afo4o"]
 [ext_resource type="PackedScene" uid="uid://csv2klmjhojfk" path="res://Scenes/Obstacles/obstacle.tscn" id="4_j8d8x"]
 [ext_resource type="PackedScene" uid="uid://ddsofs3sa7k83" path="res://Scenes/Obstacles/surface.tscn" id="5_djtc0"]
@@ -9506,31 +9506,37 @@ texture = ExtResource("1_b37b3")
 20:36/0 = 0
 20:36/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 20:36/0/physics_layer_0/angular_velocity = 0.0
+20:36/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 20:36/0/physics_layer_1/linear_velocity = Vector2(0, 0)
 20:36/0/physics_layer_1/angular_velocity = 0.0
 21:36/0 = 0
 21:36/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 21:36/0/physics_layer_0/angular_velocity = 0.0
+21:36/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 21:36/0/physics_layer_1/linear_velocity = Vector2(0, 0)
 21:36/0/physics_layer_1/angular_velocity = 0.0
 22:36/0 = 0
 22:36/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 22:36/0/physics_layer_0/angular_velocity = 0.0
+22:36/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 22:36/0/physics_layer_1/linear_velocity = Vector2(0, 0)
 22:36/0/physics_layer_1/angular_velocity = 0.0
 23:36/0 = 0
 23:36/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 23:36/0/physics_layer_0/angular_velocity = 0.0
+23:36/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 23:36/0/physics_layer_1/linear_velocity = Vector2(0, 0)
 23:36/0/physics_layer_1/angular_velocity = 0.0
 24:36/0 = 0
 24:36/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 24:36/0/physics_layer_0/angular_velocity = 0.0
+24:36/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 24:36/0/physics_layer_1/linear_velocity = Vector2(0, 0)
 24:36/0/physics_layer_1/angular_velocity = 0.0
 25:36/0 = 0
 25:36/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 25:36/0/physics_layer_0/angular_velocity = 0.0
+25:36/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 25:36/0/physics_layer_1/linear_velocity = Vector2(0, 0)
 25:36/0/physics_layer_1/angular_velocity = 0.0
 26:36/0 = 0
