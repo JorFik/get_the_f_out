@@ -137,7 +137,10 @@ func _on_area_2d_mainchar_area_entered(area):
 		for overl_body in overl_bodies:
 			if (overl_body.has_method("init_dial")):
 				print("PLAYER MET SOMEBODY")
-				sprite_2d.animation = "idle_down"
+				if blue:
+					sprite_2d.animation = "idle_down_blue"
+				else:
+					sprite_2d.animation = "idle_down"
 				player_is_talking = true
 				Dialogic.timeline_ended.connect(_on_timeline_ended)
 				overl_body.init_dial()

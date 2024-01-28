@@ -7,7 +7,7 @@ func _ready():
 func _on_door_body_entered(body):
 		if body.name == "red":
 			SpawnManager.spawn_name = "RightSpawn"
-			get_tree().change_scene_to_file("res://Scenes/upper_floor.tscn")
+			get_tree().change_scene_to_file("res://Scenes/scene.tscn")
 
 func _on_door2_body_entered(body):
 		if body.name == "red":
