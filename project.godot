@@ -18,6 +18,7 @@ config/icon="res://Resources/icon.svg"
 [autoload]
 
 Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
+SpawnManager="*res://Scenes/spawn_manager.gd"
 
 [dialogic]
 
