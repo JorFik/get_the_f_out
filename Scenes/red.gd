@@ -104,15 +104,17 @@ func calculate_max_height():
 	return max_height
 
 func _on_area_2d_mainchar_area_entered(area):
+	print("PLayer entered area sdffgsf")
 	var overl_bodies = area.get_overlapping_bodies()
-	var	overl_body
 	if overl_bodies.size() > 0:
-		overl_body = overl_bodies.front()
-	if (overl_body.has_method("init_dial")):
-		sprite_2d.animation = "idle_down"
-		player_is_talking = true
-		Dialogic.timeline_ended.connect(_on_timeline_ended)
-		overl_body.init_dial()
+		for overl_body in overl_bodies:
+			if (overl_body.has_method("init_dial")):
+				print("PLAYER MET SOMEBODY")
+				sprite_2d.animation = "idle_down"
+				player_is_talking = true
+				Dialogic.timeline_ended.connect(_on_timeline_ended)
+				overl_body.init_dial()
+				break
 	if area.is_in_group("surface"):
 		colliding_surfaces.append(area)
 		surface_height = calculate_max_height()

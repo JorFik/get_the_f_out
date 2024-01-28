@@ -1,13 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://qqcbbpqmp7dq"]
+[gd_scene load_steps=8 format=3 uid="uid://qqcbbpqmp7dq"]
 
 [ext_resource type="PackedScene" uid="uid://rntxee5ikkkn" path="res://Scenes/red.tscn" id="1_fjd6q"]
 [ext_resource type="TileSet" uid="uid://biidopqd44mm4" path="res://texture/start.tres" id="1_fykf6"]
 [ext_resource type="PackedScene" uid="uid://cj0vm4hm5cmw8" path="res://Scenes/butler.tscn" id="4_0elhi"]
 [ext_resource type="PackedScene" uid="uid://vl3f6sygaawn" path="res://Scenes/owner.tscn" id="5_ppfr2"]
 [ext_resource type="Script" path="res://Scenes/owner.gd" id="6_xsrrp"]
-[ext_resource type="PackedScene" uid="uid://bq0kbgipiv6qa" path="res://Scenes/dialogue_scene.tscn" id="7_tcnhq"]
 [ext_resource type="Script" path="res://Scenes/event_manager.gd" id="8_5fix7"]
-[ext_resource type="PackedScene" uid="uid://d14ly37cexh4k" path="res://Scenes/dialogue_butler_scene.tscn" id="8_n8f85"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bmd8d"]
 size = Vector2(88, 146.5)
@@ -34,7 +32,7 @@ script = ExtResource("6_xsrrp")
 [node name="triger area" type="Area2D" parent="owner"]
 
 [node name="colision area" type="CollisionShape2D" parent="owner/triger area"]
-position = Vector2(14.4, -20.8)
+position = Vector2(13, -24.75)
 shape = SubResource("RectangleShape2D_bmd8d")
 debug_color = Color(0.584314, 0.380392, 1, 0.419608)
 
@@ -51,9 +49,3 @@ layer_0/tile_data = PackedInt32Array(1638423, 65541, 0, 1703959, 65541, 1, 17694
 
 [node name="event_manager" type="Node" parent="."]
 script = ExtResource("8_5fix7")
-
-[node name="DialogueSceneFinal" parent="." instance=ExtResource("7_tcnhq")]
-visible = false
-
-[node name="DialogueSceneFinalButOnly" parent="." instance=ExtResource("8_n8f85")]
-visible = false
