@@ -10,6 +10,8 @@ func _ready():
 	$EndTimer.start()
 	await $EndTimer.timeout
 	get_tree().change_scene_to_file("res://Scenes/first_cut_Scene.tscn")
+	#res://Scenes/outro_cut_scene.tscn
+	#if Input.is_physical_key_pressed("KEY_ESCAPE") or Input.is_physical_key_pressed("KEY_Q")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
