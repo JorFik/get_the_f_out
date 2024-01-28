@@ -6,7 +6,7 @@ func _ready():
 	$Text.visible_characters = 0
 	while ($Text.visible_ratio < 1):
 		await $CharacterTimer.timeout
-		$Text.visible_characters += 1
+		$Text.visible_characters^ += 1
 	$EndTimer.start()
 	await $EndTimer.timeout
 	get_tree().change_scene_to_file("res://Scenes/first_cut_Scene.tscn")
