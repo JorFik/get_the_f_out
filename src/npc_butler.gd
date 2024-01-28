@@ -12,3 +12,4 @@ func init_dial():
 func _on_timeline_ended():
 	Dialogic.timeline_ended.disconnect(_on_timeline_ended)
 	get_node("/root/Start/DialogueSceneButler").visible = false
+	$".".hide()

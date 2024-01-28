@@ -22,6 +22,7 @@ Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
+"Mortymare Rickson": "res://Mortymare Rickson.dch",
 "Voice2": "res://texture/Voice2.dch",
 "butler": "res://chararcters/butler.dch",
 "question_mark": "res://texture/question_mark.dch"
