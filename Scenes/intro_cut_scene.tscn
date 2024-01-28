@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://by7mner3anen5"]
+[gd_scene load_steps=3 format=3 uid="uid://de5rprmrurx8j"]
 
 [ext_resource type="Script" path="res://Scenes/intro_cut_scene.gd" id="1_c0e7v"]
-[ext_resource type="FontFile" uid="uid://bvehkghp7x5o3" path="res://Resources/burtons_nightmare/NITEMARE.TTF" id="1_tff7t"]
+[ext_resource type="FontFile" uid="uid://bxyb1tkic3h5x" path="res://Resources/burtons_nightmare/NITEMARE.TTF" id="1_tff7t"]
 
 [node name="IntroCutScene" type="Node"]
 script = ExtResource("1_c0e7v")
