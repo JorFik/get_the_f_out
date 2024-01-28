@@ -7,3 +7,4 @@ if {first_time} == 1:
 else:
 	This is not our first dialogue.
 	[wait time="0.1"]
+	[end_timeline]
