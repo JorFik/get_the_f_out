@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://leic6132hfbj"]
 
-[ext_resource type="Texture2D" uid="uid://mepsfkyiwhd3" path="res://Resources/haunted  6.jpg" id="1_4qgrp"]
+[ext_resource type="Texture2D" uid="uid://bc64vnusti7cp" path="res://Resources/haunted  6.jpg" id="1_4qgrp"]
 [ext_resource type="Script" path="res://Scenes/upper_floor_left.gd" id="1_r63xy"]
 [ext_resource type="PackedScene" uid="uid://rntxee5ikkkn" path="res://Scenes/red.tscn" id="2_igv2m"]
 [ext_resource type="PackedScene" uid="uid://csv2klmjhojfk" path="res://Scenes/Obstacles/obstacle.tscn" id="4_vq1m4"]
@@ -9689,7 +9689,7 @@ position = Vector2(-6.875, 26)
 shape = SubResource("RectangleShape2D_ggrdu")
 
 [node name="red" parent="." instance=ExtResource("2_igv2m")]
-position = Vector2(1061, 1719)
+position = Vector2(960, 1642)
 rotation = 3.14159
 scale = Vector2(2, -2)
 
