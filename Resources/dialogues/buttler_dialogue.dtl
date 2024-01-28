@@ -1,7 +1,16 @@
-butler: Good evening, young man. I've come in representation of my master, and I found myself in the necessity to inform you that you trespassed on private property. I'm afraid I have to ask you to leave.
-butler: What are you waiting for? Get the… please get out.
-butler: What will happen if you stay?! Well, I can't really do anything about it. I'm a ghost, I don't have a physical body.
-butler: What do you mean, you are just going to stay?! HELLO, YOU ARE TALKING TO A GHOST! How are you so calm?!
-butler: (sighs) You're not the sharpest tool in the shed, are you?
-butler: I recognize stupid people when I see them… Prove me wrong then. Here is a small riddle for you.
-[wait time="0.1"]
+if {dial_stage} == 1:
+	Good evening, young man. I've come in representation of my master, and I found myself in the necessity to inform you that you trespassed on private property. I'm afraid I have to ask you to leave.
+	What are you waiting for? Get the… please get out.
+	What will happen if you stay?! Well, I can't really do anything about it. I'm a ghost, I don't have a physical body.
+	What do you mean, you are just going to stay?! HELLO, YOU ARE TALKING TO A GHOST! How are you so calm?!
+	I recognize stupid people when I see them… Prove me wrong then. Here is a small riddle for you.
+	(sighs) You're not the sharpest tool in the shed, are you?
+	[wait time="0.1"]
+	set {dial_stage} = 2
+	[signal arg="riddle1"]
+elif {dial_stage} == 2:
+	I am waiting for you to solve my riddle
+	[wait time="0.1"]
+elif {dial_stage} == 3:
+	You solved the riddle.
+	set {dial_stage} = 4
