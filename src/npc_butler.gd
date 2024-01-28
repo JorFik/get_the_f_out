@@ -3,6 +3,7 @@ extends CharacterBody2D
 const FIRST_DIAL = 1
 const SOLVING_FIRST_RIDDLE = 2
 const AFTER_SOLVED_FIRST_RIDDLE = 3
+const AFTER_SOLVED_FIRST_RIDDLE_AND_TALKED = 4
 
 var cur_dial
 var riddle1_scene = preload("res://Scenes/Riddles/Number Riddle/number_riddle.tscn")
@@ -53,6 +54,11 @@ func init_dial():
 		cur_dial.show()
 		return
 	elif (Dialogic.VAR.dial_stage == AFTER_SOLVED_FIRST_RIDDLE):
+		get_node("/root/Start/DialogueSceneGeezer").visible = true
+		cur_dial = Dialogic.start("res://Resources/dialogues/oldman_after_riddle.dtl")
+		Dialogic.timeline_ended.connect(_on_timeline_ended)
+		cur_dial.show()
+	elif (Dialogic.VAR.dial_stage == AFTER_SOLVED_FIRST_RIDDLE_AND_TALKED):
 		get_node("/root/Start/DialogueSceneGeezer").visible = true
 		cur_dial = Dialogic.start("res://Resources/dialogues/oldman_after_riddle.dtl")
 		Dialogic.timeline_ended.connect(_on_timeline_ended)
