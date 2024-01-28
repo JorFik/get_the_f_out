@@ -51,6 +51,7 @@ save/encryption_on_exports_only=true
 text/autopauses={}
 variables={
 "NewVariable": "228",
+"dial_stage": "1",
 "first_time": "1"
 }
 layout/style_list=["res://texture/New_File.tres"]

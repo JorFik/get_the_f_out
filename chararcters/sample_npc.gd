@@ -27,7 +27,7 @@ func _on_dialogic_signal(argument:String):
 
 
 func _on_riddle_correct():
-	print ("_ON_RIDDLE_CORRECT_IN_ANOTHER_NODE_AA")
+	#print ("_ON_RIDDLE_CORRECT_IN_ANOTHER_NODE_AA")
 	riddle1.visible = false
 	riddle1.queue_free()
 	# get_node("/root/Start/DialogueSceneGeezer").visible = true
