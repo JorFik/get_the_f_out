@@ -1,8 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://dcpxv4c1kotek"]
+[gd_scene load_steps=9 format=3 uid="uid://dcpxv4c1kotek"]
 
 [ext_resource type="Script" path="res://Scenes/upper_floor.gd" id="1_4ju4s"]
 [ext_resource type="Texture2D" uid="uid://bc64vnusti7cp" path="res://Resources/haunted  6.jpg" id="1_b37b3"]
 [ext_resource type="PackedScene" uid="uid://rntxee5ikkkn" path="res://Scenes/red.tscn" id="2_afo4o"]
+[ext_resource type="PackedScene" uid="uid://csv2klmjhojfk" path="res://Scenes/Obstacles/obstacle.tscn" id="4_j8d8x"]
+[ext_resource type="PackedScene" uid="uid://ddsofs3sa7k83" path="res://Scenes/Obstacles/surface.tscn" id="5_djtc0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u1u64"]
 texture = ExtResource("1_b37b3")
@@ -9687,5 +9689,114 @@ shape = SubResource("RectangleShape2D_tbul6")
 [node name="red" parent="." instance=ExtResource("2_afo4o")]
 position = Vector2(957, 1669)
 scale = Vector2(2, 2)
+
+[node name="Obstacle10" parent="." instance=ExtResource("4_j8d8x")]
+position = Vector2(492, 997)
+scale = Vector2(5.16158, 4.24651)
+
+[node name="Surface" parent="." instance=ExtResource("5_djtc0")]
+position = Vector2(1131, 1345)
+scale = Vector2(1.28074, 1.42336)
+
+[node name="Surface14" parent="." instance=ExtResource("5_djtc0")]
+position = Vector2(1314, 1650)
+scale = Vector2(0.470088, 0.537069)
+metadata/Height = 15.0
+
+[node name="Obstacle9" parent="." instance=ExtResource("4_j8d8x")]
+position = Vector2(1267, 1246)
+scale = Vector2(1.57336, 1.46794)
+
+[node name="Surface13" parent="." instance=ExtResource("5_djtc0")]
+position = Vector2(1452, 1363)
+scale = Vector2(0.470088, 0.537069)
+metadata/Height = 15.0
+
+[node name="Surface2" parent="." instance=ExtResource("5_djtc0")]
+position = Vector2(1043, 1508)
+scale = Vector2(0.470088, 0.537069)
+metadata/Height = 15.0
+
+[node name="Obstacle7" parent="." instance=ExtResource("4_j8d8x")]
+position = Vector2(861, 1388)
+scale = Vector2(1.57336, 1.46794)
+
+[node name="Obstacle8" parent="." instance=ExtResource("4_j8d8x")]
+position = Vector2(1131, 1532)
+scale = Vector2(1.57336, 1.46794)
+
+[node name="Obstacle19" parent="." instance=ExtResource("4_j8d8x")]
+position = Vector2(226, 923)
+scale = Vector2(11.1983, 0.57034)
+
+[node name="Obstacle21" parent="." instance=ExtResource("4_j8d8x")]
+position = Vector2(2198, 181)
+scale = Vector2(0.463581, 9.08728)
+
+[node name="Obstacle20" parent="." instance=ExtResource("4_j8d8x")]
+position = Vector2(232, 1341)
+scale = Vector2(11.1983, 0.57034)
+
+[node name="Obstacle16" parent="." instance=ExtResource("4_j8d8x")]
+position = Vector2(1134, 68)
+scale = Vector2(2.41093, 1.98841)
+
+[node name="Surface10" parent="." instance=ExtResource("5_djtc0")]
+position = Vector2(1460, 248)
+scale = Vector2(0.398258, 0.457789)
+metadata/Height = 15.0
+
+[node name="Surface9" parent="." instance=ExtResource("5_djtc0")]
+position = Vector2(1086, 231)
+scale = Vector2(1.72063, 0.818742)
+metadata/Height = 15.0
+
+[node name="Obstacle15" parent="." instance=ExtResource("4_j8d8x")]
+position = Vector2(598, 63)
+scale = Vector2(4.5515, 2.11872)
+
+[node name="Obstacle17" parent="." instance=ExtResource("4_j8d8x")]
+position = Vector2(605, 70)
+scale = Vector2(3.14112, 1.77085)
+
+[node name="Surface11" parent="." instance=ExtResource("5_djtc0")]
+position = Vector2(1006, 216)
+scale = Vector2(0.701486, 0.207534)
+metadata/Height = 35.0
+
+[node name="Obstacle18" parent="." instance=ExtResource("4_j8d8x")]
+position = Vector2(1208, 963)
+scale = Vector2(1.57336, 1.46794)
+
+[node name="Surface12" parent="." instance=ExtResource("5_djtc0")]
+position = Vector2(1373, 1064)
+scale = Vector2(0.575795, 0.757159)
+metadata/Height = 15.0
+
+[node name="Obstacle11" parent="." instance=ExtResource("4_j8d8x")]
+position = Vector2(-181, 558)
+scale = Vector2(5.01133, 5.94322)
+
+[node name="Surface5" parent="." instance=ExtResource("5_djtc0")]
+position = Vector2(432, 1107)
+scale = Vector2(1.28074, 1.42336)
+
+[node name="Obstacle14" parent="." instance=ExtResource("4_j8d8x")]
+position = Vector2(-389, 852)
+scale = Vector2(4.5515, 2.11872)
+
+[node name="Surface8" parent="." instance=ExtResource("5_djtc0")]
+position = Vector2(142, 1044)
+scale = Vector2(1.37602, 0.338278)
+metadata/Height = 35.0
+
+[node name="Surface6" parent="." instance=ExtResource("5_djtc0")]
+position = Vector2(187, 1224)
+scale = Vector2(0.565862, 0.630865)
+metadata/Height = 15.0
+
+[node name="Obstacle12" parent="." instance=ExtResource("4_j8d8x")]
+position = Vector2(14, 1111)
+scale = Vector2(1.57336, 1.46794)
 
 [connection signal="body_entered" from="Door" to="." method="_on_door_body_entered"]
